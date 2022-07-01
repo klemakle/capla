@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <nuxt-child class="my-8" />
+    <nuxt-child class="my-8 mx-4" />
   </div>
 </template>
 

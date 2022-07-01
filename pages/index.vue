@@ -3,30 +3,57 @@
     <!-- presentation -->
     <div class="flex flex-col-reverse md:flex-row md:flex-wrap justify-between content-start px-10  mb-3">
       <div class="h-auto w-full md:w-1/2 px-1 h-auto  ">
-        <div class="text-xl md:text-7xl text-gray-700 border-3 h-auto w-full">
-          <p class="py-1 md:py-3">Meet 'img'</p>
-          <p class="py-1 md:py-3">without a </p>
-          <p class="py-1 md:py-3">Hitch 'images'</p>
+        <div class="text-xl md:text-7xl flex md:flex-col text-gray-700 border-3 h-auto w-full">
+          <p class="py-1 md:py-3">CAPLA 'img' </p>
+          <p class="py-1 md:py-3"> English for </p>
+          <p class="py-1 md:py-3"> All 'img'</p>
         </div>
-        <p class="my-2 text-gray-400 leading-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque vero minima animi a quaerat, quis quidem natus suscipit tenetur. Quod qui deserunt velit explicabo vel soluta reprehenderit possimus dolor dolore!</p>
+        <p class="my-2 text-gray-400 leading-6">{{presentation_text}}</p>
         <button class="px-5 py-4 bg-indigo-500 hover:bg-indigo-400 text-white rounded-2xl my-3"> Contact Us </button>
       </div>
-      <div class="w-full mb-2 md:mb-0 md:w-1/2 ">
+      <div class="w-full mb-3 md:mb-0 md:w-1/2 ">
         <img class="w-full h-full" src="../assets/images/capla.svg" alt="capla">
       </div>
     </div>
 
     <!-- more fun with effect filters -->
-    <div class="flex flex-col md:flex-row bg-gray-50 mx-auto my-20 py-10 px-10 w-ful ">
-      <div class="text-5xl md:w-1/3 w-full h-36 p-4">
-      More fun with effect filters
+    <div class="flex flex-col md:flex-row bg-gray-50 mx-auto my-20 py-10 px-10 w-full ">
+      <div class="text-3xl md:w-1/2 w-full h-36 p-4 text-gray-700">
+      <p>Ce que nous faisons au <span class="text-blue-700">Capla</span></p>
       </div>
-      <div v-for="n in 3" :key="n" class="bg-white card  flex flex-col rounded-xl py-2 px-4 justify-between my-2 w-full md:w-1/4 mx-2 items-start">
+      <div v-for="(n,index) in type_anglais" :key="index" class="bg-white card border-0 border-gray-200 flex flex-col rounded-xl py-2 px-4 justify-between my-2 w-full md:w-1/2 mx-2 items-start ease-in duration-200 hover:shadow-md">
         <div class="photo w-16 bg-blue-300 rounded-md h-18 mb-1 mt-2 p-2">
-          <img :src="require(`@/assets/images/evolution${n}.png`)" class="w-full h-auto" alt="leader">
+          <img :src="require(`@/assets/images/evolution${index}.png`)" class="w-full h-auto" alt="leader">
         </div>
-        <div class="title text-lg  text-gray-600 my-1">Mama Koala</div>
-        <div class="text-card text-gray-300 my-2 w-full text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque vero minima animi a quaerat,</div>
+        <div class="title text-base  text-gray-600 my-1">{{n.text}}</div>
+        <div class="text-card text-gray-400 my-1 w-full text-sm">{{n.description}}</div>
+      </div>
+    </div>
+
+    <!-- nos activites -->
+
+
+    <!-- testimonials -->
+    <div class="flex flex-col justify-between my-20 mx-auto px-10 py-5">
+      <div class="text-3xl md:text-5xl w-full md:w-1/2 text-gray-600 tracking-wider font-medium">
+        <p>Qu'est ce qu'on dit à propos nous ?</p>
+      </div>
+
+      <div class="flex flex-col md:flex-row justify-between mt-12 md:mt-16">
+        <div v-for="(temoin,n) in testimonials" :key="n" class="flex flex-col  md:mx-16 my-8 w-full md:w-1/3">
+          <div class="flex flex-col md:flex-row items-center ">
+            <div class="w-1/5">
+              <img class="w-full h-auto rounded-full" :src="require(`@/assets/images/temoignage/temoin${n}.jpeg`)" alt="">
+            </div>
+            <div class="flex flex-col w-auto mx-6">
+              <p class="text-gray-500 text-xl text-center md:text-left">{{temoin.fullname}}</p>
+              <p class="text-gray-400 text-center md:text-left"> {{temoin.fonction}}</p>
+            </div>
+          </div>
+          <div class="mt-4 text-gray-300 my-2 w-full text-justify">
+           {{temoin.text}}
+          </div>
+        </div>
       </div>
     </div>
 
@@ -48,12 +75,24 @@
         </div>
       </div>
     </div>
+
+
   </div>
 </template>
 
 <script>
+import {presentation,testimonials, services} from '../assets/js/text'
+
+
 export default {
   layout:'navbar',
+  data() {
+    return{
+      presentation_text:presentation,
+      type_anglais:services,
+      testimonials
+    }
+  }
 
 }
 </script>
