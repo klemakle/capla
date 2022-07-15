@@ -33,7 +33,14 @@ export default {
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: [],
+    modules: [
+        [
+            "nuxt-gmaps",
+            {
+                key: 'AIzaSyDRmCh8-3LoLwg9CrUx4O0JUnTvaPoxEdQ'
+            }
+        ]
+    ],
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {}

@@ -16,17 +16,45 @@
       </div>
     </div>
 
+    <!-- personnes formees par capla -->
+    <div class="stats flex flex-col md:flex-row w-full bg-gray-50 justify-between px-12 py-4">
+      <div class="promotion py-2 px-3 bg-white w-full md:w-1/5 rounded-lg shadow my-4" v-for="n in 4" :key="n">
+        <div class="top-card flex flex-row justify-between mb-6">
+          <div class="px-2 py-2 w-1/5 bg-red-200 self-start rounded-lg -mt-7">
+            <img src="../assets/images/promo.svg" class="center" alt="promo_alt">
+          </div>
+          <div class="flex flex-col justify-start">
+            <p class="text-gray-400">Promotions</p>
+            <p id="promo" class="text-gray-500 self-end text-base">11</p>
+          </div>
+        </div>
+        <p class="self-end mt-4 text-gray-500">Depuis sa création</p>
+      </div>
+      <!-- <div class="femmes">
+        <p id="femme"></p>
+        <p>femmes</p>
+      </div>
+      <div class="hommes">
+        <p id="homme">125</p>
+        <p>Hommes</p>
+      </div>
+      <div class="tranche_age">
+        <p id="min">10 à 55 ans</p>
+        <p id="max">accessible à tous</p>
+      </div> -->
+    </div>
+
     <!-- more fun with effect filters -->
     <div class="flex flex-col md:flex-row bg-gray-50 mx-auto my-20 py-10 px-10 w-full ">
       <div class="text-3xl md:w-1/2 w-full h-36 p-4 text-gray-700">
       <p>Ce que nous faisons au <span class="text-blue-700">Capla</span></p>
       </div>
-      <div v-for="(n,index) in type_anglais" :key="index" class="bg-white card border-0 border-gray-200 flex flex-col rounded-xl py-2 px-4 justify-between my-2 w-full md:w-1/2 mx-2 items-start ease-in duration-200 hover:shadow-md">
+      <div v-for="(n,index) in type_anglais" :key="index" class="bg-white card border-0 border-gray-200 flex flex-col rounded-xl py-2 px-4 justify-start my-2 w-full md:w-1/2 mx-2 ease-in duration-200 hover:shadow-md">
         <div class="photo w-16 bg-blue-300 rounded-md h-18 mb-1 mt-2 p-2">
           <img :src="require(`@/assets/images/evolution${index}.png`)" class="w-full h-auto" alt="leader">
         </div>
-        <div class="title text-base  text-gray-600 my-1">{{n.text}}</div>
-        <div class="text-card text-gray-400 my-1 w-full text-sm">{{n.description}}</div>
+        <div class="title text-base items-start  text-gray-700 my-1">{{n.text}}</div>
+        <div class="text-card text-gray-400 my-1 w-full items-start text-sm">{{n.description}}</div>
       </div>
     </div>
 
@@ -41,16 +69,16 @@
 
       <div class="flex flex-col md:flex-row justify-between mt-12 md:mt-16">
         <div v-for="(temoin,n) in testimonials" :key="n" class="flex flex-col  md:mx-16 my-8 w-full md:w-1/3">
-          <div class="flex flex-col md:flex-row items-center ">
-            <div class="w-1/5">
-              <img class="w-full h-auto rounded-full" :src="require(`@/assets/images/temoignage/temoin${n}.jpeg`)" alt="">
+          <div class="flex flex-col md:flex-col items-center ">
+            <div class="w-1/4 mb-2">
+              <img class="w-full h-auto rounded-full shadow-lg" :src="require(`@/assets/images/temoignage/back/temoin${n}.png`)" alt="">
             </div>
-            <div class="flex flex-col w-auto mx-6">
+            <div class="flex flex-col items-center w-auto mx-6">
               <p class="text-gray-500 text-xl text-center md:text-left">{{temoin.fullname}}</p>
               <p class="text-gray-400 text-center md:text-left"> {{temoin.fonction}}</p>
             </div>
           </div>
-          <div class="mt-4 text-gray-300 my-2 w-full text-justify">
+          <div class="mt-4 text-gray-300 my-2 w-full text-justify text-sm">
            {{temoin.text}}
           </div>
         </div>
@@ -92,6 +120,42 @@ export default {
       type_anglais:services,
       testimonials
     }
+  },
+
+  methods: {
+    animate(obj, initVal, lastVal, duration) {
+         let startTime = null;
+
+      //get the current timestamp and assign it to the currentTime variable
+      let currentTime = Date.now();
+
+      //pass the current timestamp to the step function
+      const step = (currentTime ) => {
+
+      //if the start time is null, assign the current time to startTime
+      if (!startTime) {
+         startTime = currentTime ;
+      }
+       //calculate the value to be used in calculating the number to be displayed
+      const progress = Math.min((currentTime - startTime)/ duration, 1);
+
+      //calculate what to be displayed using the value gotten above
+      obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+
+      //checking to make sure the counter does not exceed the last value (lastVal)
+      if (progress < 1) {
+         window.requestAnimationFrame(step);
+      } else {
+            window.cancelAnimationFrame(window.requestAnimationFrame(step));
+         }
+      };
+      //start animating
+         window.requestAnimationFrame(step);
+      }
+  },
+  mounted(){
+    const text1=document.querySelector("#femme");
+    this.animate(text1, 0, 511, 7000);
   }
 
 }

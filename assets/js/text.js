@@ -23,19 +23,19 @@ const testimonials = [{
 
 const services = [{
         text: "Anglais général",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque vero minima animi a quaerat,"
+        description: "Renforcer et améliorer la communication de l’auditeur en situation d’entreprise et dans la vie sociale."
     },
     {
         text: "Management de projet",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque vero minima animi a quaerat,"
+        description: "Comprendre le processus d’élaboration, de management et suivi-évaluation de projet. Savoir communiquer, interpréter les données en anglais"
     },
     {
         text: "Anglais commercial",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque vero minima animi a quaerat,"
+        description: "Comprendre, interpréter, savoir communiquer et interagir avec les clients en anglais commercial en entreprise"
     },
     {
         text: "Anglais bancaire et financier",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque vero minima animi a quaerat,"
+        description: "Comprendre, interpréter et savoir faire une présentation de la comptabilité bancaire en anglais"
     },
 ]
 
