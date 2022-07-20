@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="googlemap" class="my-8 bg-gray-100 md:p-4 -mx-8">
+    <div id="googlemap" class="my-8 bg-gray-100 md:p-4 -mx-6">
       <GMap
       ref="gMap"
       :cluster="{ options: { styles: clusterStyle } }"
@@ -41,7 +41,7 @@
 
     <div id="contactForm" class="mx-10 border-2 p-4 -mx-2 ">
       <div id="contactUs" class=" flex flex-col justify-center items-center w-full">
-        <div class="w-auto text-gray-600 text-3xl md:text-6xl my-4"> Contact Us</div>
+        <div class="w-auto text-gray-600 text-3xl md:text-6xl my-4"> Contactez nous</div>
         
         <div class="input-text w-full md:w-1/2 my-10">
           <div class="app-form-group my-8">
@@ -72,39 +72,16 @@
 </template>
 
 <script>
+import { locations, mapStyle} from '@/assets/js/map.js' ;
+
 export default {
   layout:'navbar',
   data() {
     return {
       currentLocation: {},
       locationsVisibleOnMap: "",
-      locations: [
-        {
-          lat: 45.81444,
-          lng: 15.97798,
-          name: "Zagreb",
-        },
-        {
-          lat: 46.056946,
-          lng: 14.505751,
-          name: "Ljubljana",
-        },
-        {
-          lat: 47.497913,
-          lng: 19.040236,
-          name: "Budapest",
-        },
-        {
-          lat: 48.210033,
-          lng: 16.363449,
-          name: "Vienna",
-        },
-        {
-          lat: 52.520008,
-          lng: 13.404954,
-          name: "Berlin",
-        },
-      ],
+      locations,
+      mapStyle,
        clusterStyle: [
         {
           url: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m1.png",
@@ -119,145 +96,10 @@ export default {
         notSelected:
           "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABHElEQVR42uVVyw4BMRQdC98lsbPwG5YSH+BzWFtLZilh0oQgFh6J54IwBmGYtrfaBREdcTvDhpM0adrec3rb+7Csn8fRdrLg7VzBubhDzmHrudRuZ2KRs/miLd6AThfNaOTTGRFIsMm8bkSuXBeGoLVaGi0g39wLI4GTf1EjdE/+E1pAAGgEAenkb/tBo1vQFUDgBbSbny6al77uSQwB/6wJSNHoAo8xj30iaYMW4Lv9wfSTpc0eH6atXtE4TKWNUS4AY2hyddY4k/lwVEZncm9QilQuBGPwnp1B5GIXGi3P0eU0c7EqKrje5hU5d7fr2P2AEJIESkNqB1XJkvhI0/GrTuqZX619tLMF/VHlfnk5/0r7ZMvVWA3rr3AF6LIMZ7PmSlUAAAAASUVORK5CYII=",
       },
-        mapStyle: [
-        {
-          featureType: "all",
-          elementType: "labels.text.fill",
-          stylers: [
-            {
-              color: "#ffffff",
-            },
-          ],
-        },
-        {
-          featureType: "all",
-          elementType: "labels.text.stroke",
-          stylers: [
-            {
-              visibility: "on",
-            },
-            {
-              color: "#3e606f",
-            },
-            {
-              weight: 2,
-            },
-            {
-              gamma: 0.84,
-            },
-          ],
-        },
-        {
-          featureType: "all",
-          elementType: "labels.icon",
-          stylers: [
-            {
-              visibility: "off",
-            },
-          ],
-        },
-        {
-          featureType: "administrative",
-          elementType: "geometry",
-          stylers: [
-            {
-              weight: 0.6,
-            },
-            {
-              color: "#313536",
-            },
-          ],
-        },
-        {
-          featureType: "landscape",
-          elementType: "geometry",
-          stylers: [
-            {
-              color: "#44a688",
-            },
-          ],
-        },
-        {
-          featureType: "poi",
-          elementType: "geometry",
-          stylers: [
-            {
-              color: "#13876c",
-            },
-          ],
-        },
-        {
-          featureType: "poi.attraction",
-          elementType: "geometry.stroke",
-          stylers: [
-            {
-              color: "#f5e4e4",
-            },
-            {
-              visibility: "off",
-            },
-          ],
-        },
-        {
-          featureType: "poi.attraction",
-          elementType: "labels",
-          stylers: [
-            {
-              visibility: "on",
-            },
-            {
-              lightness: "14",
-            },
-          ],
-        },
-        {
-          featureType: "poi.park",
-          elementType: "geometry",
-          stylers: [
-            {
-              color: "#13876c",
-            },
-            {
-              visibility: "simplified",
-            },
-          ],
-        },
-        {
-          featureType: "road",
-          elementType: "geometry",
-          stylers: [
-            {
-              color: "#067372",
-            },
-            {
-              lightness: "-20",
-            },
-          ],
-        },
-        {
-          featureType: "transit",
-          elementType: "geometry",
-          stylers: [
-            {
-              color: "#357374",
-            },
-          ],
-        },
-        {
-          featureType: "water",
-          elementType: "geometry",
-          stylers: [
-            {
-              color: "#004757",
-            },
-          ],
-        },
-      ],
     }
   }
 }
 </script>
-
 
 
 <style>

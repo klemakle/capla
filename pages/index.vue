@@ -17,7 +17,7 @@
     </div>
 
     <!-- personnes formees par capla -->
-    <div class="stats flex flex-col md:flex-row w-full bg-gray-50 justify-between px-12 py-4">
+    <!-- <div class="stats flex flex-col md:flex-row w-full bg-gray-50 justify-between px-12 py-4">
       <div class="promotion py-2 px-3 bg-white w-full md:w-1/5 rounded-lg shadow my-4" v-for="n in 4" :key="n">
         <div class="top-card flex flex-row justify-between mb-6">
           <div class="px-2 py-2 w-1/5 bg-red-200 self-start rounded-lg -mt-7">
@@ -30,19 +30,8 @@
         </div>
         <p class="self-end mt-4 text-gray-500">Depuis sa création</p>
       </div>
-      <!-- <div class="femmes">
-        <p id="femme"></p>
-        <p>femmes</p>
-      </div>
-      <div class="hommes">
-        <p id="homme">125</p>
-        <p>Hommes</p>
-      </div>
-      <div class="tranche_age">
-        <p id="min">10 à 55 ans</p>
-        <p id="max">accessible à tous</p>
-      </div> -->
-    </div>
+    </div> -->
+  
 
     <!-- more fun with effect filters -->
     <div class="flex flex-col md:flex-row bg-gray-50 mx-auto my-20 py-10 px-10 w-full ">
@@ -109,8 +98,7 @@
 </template>
 
 <script>
-import {presentation,testimonials, services} from '../assets/js/text'
-
+import {presentation,testimonials, services} from '../assets/js/text';
 
 export default {
   layout:'navbar',

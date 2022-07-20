@@ -1,14 +1,16 @@
 <template>
   <div>
     <Header />
-    <nuxt-child class="my-8 mx-4" />
+    <nuxt-child class=" my-8 mx-4" />
+    <Footer class="bottom-0"/>
   </div>
 </template>
 
 <script>
 import Header from './header.vue'
+import Footer from './footer.vue'
 export default {
-  components:{Header}
+  components:{Header, Footer}
 }
 </script>
 
