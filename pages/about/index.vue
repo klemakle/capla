@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id="photo_slides" class="-mx-4">
+        <div id="photo_slides" class="-mx-4 mb-8">
             <vueper-slides fade :touchable="false" :breakpoints="breakpoints" autoplay pause-on-hover fractions :parallax="1" parallax-fixed-content>
                 <vueper-slide
                     v-for="(slide, i) in photos"
@@ -12,18 +12,19 @@
         </div>
 
         <!-- mot du directeur -->
-        <div id="mot_du_directeur" class="px-2 py-4 mx-2 md:mx-12 my-8 border-2 flex flex-col rounded-md justify-between items-center">
+        <div id="mot_du_directeur" class="px-2 md:px-4 py-4 mx-2 md:mx-12 my-8 border-2 flex flex-col rounded-md justify-between items-center" data-aos="flip-down" data-aos-delay="50">
             <div class="text-gray-500 text-3xl underline mb-4">Mot du directeur</div>
-            <div class="flex flex-col md:flex-row justify-between items-start">
-                <div id="photo_directeur" class="w-3/4 md:w-auto md:mx-4">
-                    <img src="../../assets/images/avatar/directeur.jpeg" alt="photo du directeur" class="rounded-3xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start">
+                <div id="photo_directeur" class="w-1/2 my-2 md:w-full md:mx-4">
+                    <img src="../../assets/images/avatar/directeur.jpeg" alt="photo du directeur" class="rounded-3xl mx-auto w-auto">
                 </div>
-                <div class="text-gray-400 text-xl leading-6 md:leading-9 tracking-wide text-justify mx-4">
+                <div class="text-gray-400 text-xl leading-6 md:leading-9 tracking-wide text-justify mx-4" data-aos="zoom-in-left" data-aos-delay="500" data-aos-duration="1000">
                     <p> 
                        <span>
                         <lord-icon
                             src="https://cdn.lordicon.com/xqnbvely.json"
-                            trigger="hover"
+                            trigger="loop"
+                            delay="5000"
                             colors="primary:#6b7280,secondary:#08a88a"
                             stroke="30"
                             style="width:50px;height:50px;transform:rotate(180deg);">
@@ -34,10 +35,11 @@
                          Dans le monde entier, l'anglais peut être utilisé dans de nombreux domaines différents, notamment l'enseignement, les affaires, le marketing et la communication, le tourisme, ainsi que de nombreux autres. 
                           Avec la maîtrise de l'anglais, il est possible de travailler aux côtés d'anglophones natifs dans les écoles, les entreprises et les organisations, ouvrant la porte à des opportunités mondiales.
 
-                        En enseignant l'anglais, je veux que les gens soient mis au défi dans leur réflexion et encouragent les plus jeunes à cesser d'attendre que les autres les soutiennent et à poursuivre leurs rêves pour eux-mêmes.
+                        En enseignant l'anglais, je veux que les gens soient mis au défi dans leur réflexion et j'encourage les plus jeunes à cesser d'attendre que les autres les soutiennent et à poursuivre leurs rêves pour eux-mêmes.
                         <lord-icon
                             src="https://cdn.lordicon.com/xqnbvely.json"
-                            trigger="hover"
+                            trigger="loop"
+                            delay="5000"
                             colors="primary:#6b7280,secondary:#08a88a"
                             stroke="30"
                             style="width:50px;height:50px;">
@@ -47,17 +49,22 @@
             </div>
         </div>
 
-        <div>
+        <div data-aos="zoom-out-down" data-aos-delay="500" data-aos-duration="1000">
             <Stats/>
         </div>
     </div>
 </template>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+ 
 import {photos, breakpoints} from '../../assets/js/about.js';
 import Stats from '../../components/stats.vue'
 import { VueperSlides, VueperSlide } from 'vueperslides';
 import 'vueperslides/dist/vueperslides.css'
+
+AOS.init();
 
 export default {
     layout:'navbar',
@@ -78,7 +85,43 @@ export default {
             photos,
             breakpoints
         }
-    }
+    },
+    methods: {
+    animate(obj, initVal, lastVal, duration) {
+         let startTime = null;
+
+      //get the current timestamp and assign it to the currentTime variable
+      let currentTime = Date.now();
+
+      //pass the current timestamp to the step function
+      const step = (currentTime ) => {
+
+      //if the start time is null, assign the current time to startTime
+      if (!startTime) {
+         startTime = currentTime ;
+      }
+       //calculate the value to be used in calculating the number to be displayed
+      const progress = Math.min((currentTime - startTime)/ duration, 1);
+
+      //calculate what to be displayed using the value gotten above
+      obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+
+      //checking to make sure the counter does not exceed the last value (lastVal)
+      if (progress < 1) {
+         window.requestAnimationFrame(step);
+      } else {
+            window.cancelAnimationFrame(window.requestAnimationFrame(step));
+         }
+      };
+      //start animating
+         window.requestAnimationFrame(step);
+      }
+  },
+  mounted(){
+    const text1=document.querySelector("#femme");
+    this.animate(text1, 0, 175, 4000);
+  }
+    
 
 }
 </script>

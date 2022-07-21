@@ -29,7 +29,7 @@ const breakpoints = {
         slideRatio: 1 / 3
     },
     600: {
-        slideRatio: 1 / 2,
+        slideRatio: 6 / 10,
         arrows: false,
         bulletsOutside: true
     },
