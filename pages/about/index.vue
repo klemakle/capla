@@ -12,7 +12,7 @@
         </div>
 
         <!-- mot du directeur -->
-        <div id="mot_du_directeur" class="px-2 py-4 mx-2 md:mx-12 my-4 border-2 flex flex-col rounded-md justify-between items-center">
+        <div id="mot_du_directeur" class="px-2 py-4 mx-2 md:mx-12 my-8 border-2 flex flex-col rounded-md justify-between items-center">
             <div class="text-gray-500 text-3xl underline mb-4">Mot du directeur</div>
             <div class="flex flex-col md:flex-row justify-between items-start">
                 <div id="photo_directeur" class="w-3/4 md:w-auto md:mx-4">
@@ -46,17 +46,22 @@
                 </div>
             </div>
         </div>
+
+        <div>
+            <Stats/>
+        </div>
     </div>
 </template>
 
 <script>
 import {photos, breakpoints} from '../../assets/js/about.js';
-import { VueperSlides, VueperSlide } from 'vueperslides'
+import Stats from '../../components/stats.vue'
+import { VueperSlides, VueperSlide } from 'vueperslides';
 import 'vueperslides/dist/vueperslides.css'
 
 export default {
     layout:'navbar',
-    components:{VueperSlides, VueperSlide},
+    components:{VueperSlides, VueperSlide, Stats},
     head:{
         title: 'A propos',
         script:[
