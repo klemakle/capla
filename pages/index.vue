@@ -9,7 +9,12 @@
           <p class="py-1 md:py-3"> All 'img'</p>
         </div>
         <p class="my-2 text-gray-400 leading-6">{{presentation_text}}</p>
-        <button class="px-5 py-4 bg-indigo-500 hover:bg-indigo-400 text-white rounded-2xl my-3"> Contact Us </button>
+
+        <p class="mt-4 text-gray-400">Inscrivez-vous à notre newsletter</p>
+        <div class=" mt-4 flex justify-start items-center w-max border-gray-300 border h-14 py-2 pl-2 rounded-3xl">
+          <input type="email" id="newsletter_input" class="border-transparent px-4 py-2 h-12 rounded text-gray-700 w-full" placeholder="Enter your mail">
+          <button class="px-4 py-2 hover:bg-gray-200 bg-indigo-700 hover:text-gray-500 text-white h-14 rounded-3xl -mr-1"> S'abonner </button>
+        </div>
       </div>
       <div class="w-full mb-3 md:mb-0 md:w-1/2 ">
         <img class="w-full h-full" src="../assets/images/capla.svg" alt="capla">
@@ -120,6 +125,15 @@ export default {
 
   .partner > a:hover{
     color: #9ca3af;
+  }
+
+  #newsletter_input{
+    border: none;
+    outline: 0;
+  }
+
+  #newsletter_input:focus{
+    outline:0;
   }
   /* .partner > img{
     filter: grayscale(100%);
