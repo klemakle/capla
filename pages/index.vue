@@ -6,7 +6,7 @@
         <div class="text-xl md:text-7xl flex md:flex-col text-gray-700 border-3 h-auto w-full">
           <p class="py-1 my-auto md:py-3">CAPLA <spam><lord-icon src="https://cdn.lordicon.com/dxoycpzg.json" trigger="loop" delay="3000" colors="primary:#f24c00,secondary:#646e78,tertiary:#4bb3fd,quaternary:#ebe6ef,quinary:#fae6d1" class="w-12 h-12 md:w-24 md:h-24" ></lord-icon></spam> </p>
           <p class="py-1 my-auto md:py-3 center"><span>English for </span> </p>
-          <p class="py-1 my-auto md:py-3"> All <span><lord-icon src="https://cdn.lordicon.com/pvucrfqe.json" trigger="loop" delay="3000" colors="primary:#faefd1,secondary:#f4dc9c" class="w-12 h-12 md:w-24 md:h-24"></lord-icon></span></p>
+          <p class="py-1 my-auto md:py-3"> ALL <span><lord-icon src="https://cdn.lordicon.com/pvucrfqe.json" trigger="loop" delay="3000" colors="primary:#faefd1,secondary:#f4dc9c" class="w-12 h-12 md:w-24 md:h-24"></lord-icon></span></p>
         </div>
         <p class="my-2 text-gray-400 leading-6">{{presentation_text}}</p>
 
@@ -35,6 +35,26 @@
         <div class="text-card text-gray-400 my-1 w-full items-start text-sm">{{n.description}}</div>
       </div>
     </div>
+
+<!-- delivrance certificat -->
+
+    <div class="flex flex-col-reverse md:flex-row py-4 px-4 justify-between items-center my-10 mx-auto md:mx-12 border-2 border-gray-200">
+      <div id="certificat_text">
+        <p class="text-gray-500">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus asperiores sint nobis veritatis deserunt explicabo similique iusto, eveniet aut doloremque numquam quis itaque fugit voluptates incidunt facilis ut, voluptatum perferendis.
+        </p>
+      </div>
+
+      <div class="w-full ml-4">
+        <vueper-slides class="no-shadow h-full" bullets-outside transition-speed="250" :breakpoints="breakpoint" fixed-height="500px" :arrows="false">
+  <vueper-slide
+    v-for="(elem,i) in certificat_photos"
+    :key="i"
+    :image="elem.image" />
+</vueper-slides>
+      </div>
+    </div>
+
 
     <!-- nos activites -->
 
@@ -87,19 +107,24 @@
 </template>
 
 <script>
+import { VueperSlides, VueperSlide } from 'vueperslides';
+import 'vueperslides/dist/vueperslides.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import {presentation,testimonials, services} from '../assets/js/text';
+import {breakpoints, photos} from '../assets/js/certificat'
 
 AOS.init();
-import {presentation,testimonials, services} from '../assets/js/text';
-
 export default {
   layout:'navbar',
+  components:{VueperSlides, VueperSlide},
   data() {
     return{
       presentation_text:presentation,
       type_anglais:services,
-      testimonials
+      testimonials,
+      certificat_photos: photos, 
+      breakpoint: breakpoints
     }
   },
 }
