@@ -23,7 +23,7 @@
 
 
     <!-- more fun with effect filters -->
-    <div class="flex flex-col md:flex-row bg-gray-50 mx-auto my-20 py-10 px-10 w-full ">
+    <div class="flex flex-col md:flex-row bg-gray-50 mx-auto my-12 md:my-20 py-10 px-10 w-full ">
       <div class="text-3xl md:w-1/2 w-full h-36 p-4 text-gray-700">
       <p>Ce que nous faisons au <span class="text-blue-700">Capla</span></p>
       </div>
@@ -36,99 +36,37 @@
       </div>
     </div>
 
-<!-- delivrance certificat -->
-
-    <div class=" bg-gray-50 flex flex-col-reverse md:flex-row py-4 px-4 justify-between items-center my-10 mx-auto md:mx-12 border-2 border-gray-200">
-      <div id="certificat_text">
-        <p class="text-gray-500 text-3xl">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus asperiores sint nobis veritatis deserunt explicabo similique iusto, eveniet aut doloremque numquam quis itaque fugit voluptates incidunt facilis ut, voluptatum perferendis.
-        </p>
-      </div>
-
-      <div class="w-full ml-4 relative mb-8 md:mb-0 mx-2">
-        <img src="../assets/images/degree/grid.png" class="absolute -top-10 -right-8 md:-top-12 md:-right-12 z-10 w-20 h-20 md:w-32 md:h-32" alt=""></img>
-        <vueper-slides class="no-shadow h-full" bullets-outside transition-speed="250" :breakpoints="breakpoint" fixed-height="500px" :arrows="false">
-          <vueper-slide
-            v-for="(elem,i) in certificat_photos"
-            :key="i"
-            :image="elem.image"
-            class="rounded-md drop-shadow-lg"
-             />
-          </vueper-slides>
-          <img src="../assets/images/degree/grid.png" class="absolute bottom-0 -left-4 md:-bottom-2 md:-left-10 z-0 w-20 h-20 md:w-32 md:h-32" alt="">
-      </div>
-    </div>
-
-
+    <!-- delivrance certificat -->
+    <div><Certificat/></div>
     <!-- nos activites -->
-
-
     <!-- testimonials -->
-    <div class="flex flex-col justify-between my-20 mx-auto px-10 py-5">
-      <div class="text-3xl md:text-5xl w-full md:w-1/2 text-gray-600 tracking-wider font-medium">
-        <p>Qu'est ce qu'on dit à propos nous ?</p>
-      </div>
-
-      <div class="flex flex-col md:flex-row justify-between mt-12 md:mt-16">
-        <div v-for="(temoin,n) in testimonials" :key="n" class="flex flex-col  md:mx-16 my-8 w-full md:w-1/3">
-          <div class="flex flex-col md:flex-col items-center ">
-            <div class="w-1/4 mb-2">
-              <img class="w-full h-auto rounded-full shadow-lg" :src="require(`@/assets/images/temoignage/back/temoin${n}.png`)" alt="">
-            </div>
-            <div class="flex flex-col items-center w-auto mx-6">
-              <p class="text-gray-500 text-xl text-center md:text-left">{{temoin.fullname}}</p>
-              <p class="text-gray-400 text-center md:text-left"> {{temoin.fonction}}</p>
-            </div>
-          </div>
-          <div class="mt-4 text-gray-300 my-2 w-full text-justify text-sm">
-           {{temoin.text}}
-          </div>
-        </div>
-      </div>
-    </div>
+    <div><Temoignage/></div>
 
     <!-- partners -->
-    <div class=" flex flex-col justify-between items-center bg-gray-50  mx-auto mt-12 py-5 px-10 w-full">
-      <div class="text-gray-300 mb-4 partenaires">Partenaires</div>
-      <div class="flex flex-row md:flex-row flex-wrap justify-between items-center content-center w-full h-auto text-3xl">
-        <div class="partner w-full md:w-1/4 h-24">
-          <a href="http://www.iadlsenegal.com/" target="blank">IADL SENEGAL</a>
-        </div>
-        <div class="partner w-full md:w-1/4 h-24">
-          <a href="https://web.facebook.com/Thiesenmarche/?_rdc=1&_rdr" target="blank">THIES EN MARCHE</a>
-        </div>
-        <div class="partner w-full md:w-1/4 h-24">
-          <a href="https://instagram.com/mac_language_arts?igshid=YmMyMTA2M2Y=" target="blank">MAC CENTER</a>
-        </div>
-        <div class="partner w-full md:w-1/4 h-24">
-          <a href="https://fafaloprogram.org/" target="blank">FAFALO PROGRAM</a>
-        </div>
-      </div>
-    </div>
-
-
+    <div><Partner/></div>
   </div>
 </template>
 
 <script>
 import { VueperSlides, VueperSlide } from 'vueperslides';
+import {presentation,testimonials, services} from '../assets/js/text';
 import 'vueperslides/dist/vueperslides.css'
+import Certificat from '../components/certificat.vue';
+import Temoignage from '../components/temoignage.vue';
+import Partner from '../components/partner.vue'
+
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
-import {presentation,testimonials, services} from '../assets/js/text';
-import {breakpoints, photos} from '../assets/js/certificat'
 
 AOS.init();
 export default {
   layout:'navbar',
-  components:{VueperSlides, VueperSlide},
+  components:{VueperSlides, VueperSlide, Certificat, Temoignage, Partner},
   data() {
     return{
       presentation_text:presentation,
       type_anglais:services,
       testimonials,
-      certificat_photos: photos, 
-      breakpoint: breakpoints
     }
   },
 }
