@@ -22,6 +22,34 @@
 
 <script>
 export default{
-    
+
 }
 </script>
+
+
+<style>
+@font-face {
+  font-family: Russo;
+  src: url("@/assets/fonts/RussoOne-Regular.ttf");
+}
+  .partenaires{
+    font-family: Russo;
+  }
+  .partner{
+    font-family: Russo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .partner > a {
+    text-align: center;
+    transition: all .25s ease;
+    @apply text-gray-300;
+  }
+
+  .partner > a:hover{
+    color: #9ca3af;
+  }
+
+</style>

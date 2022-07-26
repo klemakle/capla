@@ -25,7 +25,7 @@
 
 
 <script>
-import {testimonials} from '../assets/js/text';
+import {testimonials} from '../../assets/js/text';
 
 export default {
     components:{},
