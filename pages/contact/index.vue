@@ -54,8 +54,11 @@
             <textarea class="app-form-control" placeholder="MESSAGE" rows="5" cols="33"></textarea>
           </div>
 
-          <div class="justify-self-end text-right mx-2">
-            <button class="app-form-button px-4 py-2 rounded-md">SEND</button>
+          <div class="justify-self-end text-right mx-2 my-auto">
+            <button class="app-form-button px-4 py-2 rounded-md">
+              <!-- <span class="material-symbols-outlined">send</span>  -->
+              Envoyer
+            </button>
           </div>
         </div>
 
@@ -109,7 +112,7 @@ export default {
   padding: 10px 0;
   background: none;
   border: none;
-  border-bottom: 1px solid #6b7280;
+  border-bottom: 1px solid #b4b5b9;
   color:#6b7280;
   font-size: 14px;
   text-transform: uppercase;
