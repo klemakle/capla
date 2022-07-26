@@ -64,7 +64,9 @@ import Stats from '../../components/stats.vue'
 import { VueperSlides, VueperSlide } from 'vueperslides';
 import 'vueperslides/dist/vueperslides.css'
 
-AOS.init();
+AOS.init({
+    once: true,
+});
 
 export default {
     layout:'navbar',

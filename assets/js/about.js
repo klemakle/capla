@@ -12,11 +12,11 @@ const photos = [{
     },
     {
         image: require('@/assets/images/about/classroom1.jpeg'),
-        title: ''
+        title: 'Séance d\'une classe intermediate'
     },
     {
-        image: require('@/assets/images/about/degree1.jpeg'),
-        title: 'Céremonie de remise de diplômes'
+        image: require('@/assets/images/about/children1.jpeg'),
+        title: 'Conversation de deux enfants en anglais'
     }
 
 ]

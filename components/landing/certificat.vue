@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="flex flex-col-reverse md:flex-row py-4 px-4 justify-between items-center my-10 mx-auto md:mx-12  my-10">
+        <div class="flex flex-col-reverse md:flex-row py-4 px-4 justify-between items-center my-10 mx-auto md:mx-12  mb-10 mt-24">
             <div id="certificat_text w-full md:w-1/3 text-gray-200 mx-2">
                 <p class="text-gray-400 md:text-gray-400 text-2xl md:text-5xl tracking-wide my-4 mx-2">
                     Ce que vous offre la formation avec <span class="text-indigo-400">Capla</span>
@@ -11,7 +11,7 @@
             </div>
 
             <div class=" ml-4 relative mb-8 md:mb-0 mx-2 w-full md:w-2/3">
-                <img src="@/assets/images/degree/grid.png" class="absolute -top-10 -right-8 md:-top-12 md:-right-12 z-10 w-20 h-20 md:w-32 md:h-32" alt="">
+                <img src="@/assets/images/degree/grid.png" class="absolute -top-10 -right-4 md:-top-12 md:-right-12 z-10 w-20 h-20 md:w-32 md:h-32" alt="">
                 <vueper-slides class="no-shadow h-full" bullets-outside transition-speed="350" :breakpoints="breakpoint" fixed-height="500px" :arrows="false" autoplay fade>
                 <vueper-slide
                     v-for="(elem,i) in certificat_photos"

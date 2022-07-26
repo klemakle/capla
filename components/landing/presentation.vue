@@ -9,10 +9,9 @@
                 </div>
                 <p class="my-2 text-gray-500 leading-6 text-justify">{{presentation_text}}</p>
 
-                <p class="mt-4 text-gray-400">Inscrivez-vous à notre newsletter</p>
-                <div class=" mt-4 flex justify-start items-center w-max border-gray-300 border h-14 py-2 pl-2 rounded-3xl">
-                    <input type="email" id="newsletter_input" class="border-transparent px-4 py-2 h-12 rounded text-gray-700 w-full" placeholder="Enter your mail">
-                    <button class="px-4 py-2 hover:bg-indigo-400 bg-indigo-400 text-white h-14 rounded-3xl -mr-1"> S'abonner </button>
+                <div class=" mt-4 flex justify-start items-center w-max border-gray-300 py-2 pl-2">
+                    <nuxt-link class="px-4 py-4 hover:bg-indigo-500 bg-indigo-400 text-white rounded-3xl -mr-1" to="about">Mot du directeur </nuxt-link>
+                    <!-- <button > Mot du directeur </button> -->
                 </div>
             </div>
             <div class="w-full mb-8 md:mb-0 md:w-1/2 ">
