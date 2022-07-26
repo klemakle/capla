@@ -2,7 +2,7 @@
     <div>
         <div class="flex flex-col-reverse md:flex-row py-4 px-4 justify-between items-center my-10 mx-auto md:mx-12  my-10">
             <div id="certificat_text w-full md:w-1/3 text-gray-200 mx-2">
-                <p class="text-gray-400 md:text-gray-400 text-2xl md:text-5xl tracking-wide my-8">
+                <p class="text-gray-400 md:text-gray-400 text-2xl md:text-5xl tracking-wide my-4 mx-2">
                     Ce que vous offre la formation avec <span class="text-indigo-400">Capla</span>
                 </p>
                 <div class="text-gray-400 text-2xl my-4 flex items-center"><span class="material-symbols-outlined text-green-500 mx-2">task_alt</span> Bien communiquer en anglais</div>
@@ -45,7 +45,7 @@ export default {
 
 <style>
 .vueperslides__bullet .default {
-  background-color: #d1d5db;
+  background-color: #e0e7ff;
   border: none;
   box-shadow: none;
   transition: 0.3s;
@@ -53,5 +53,5 @@ export default {
   height: 16px;
 }
 
-.vueperslides__bullet--active .default {background-color:#4b5563;}
+.vueperslides__bullet--active .default {background-color:#818cf8;}
 </style>
