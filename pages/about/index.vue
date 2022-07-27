@@ -24,11 +24,13 @@
                         <lord-icon src="https://cdn.lordicon.com/xqnbvely.json" trigger="loop" delay="5000" colors="primary:#6b7280,secondary:#08a88a" stroke="30" style="width:50px;height:50px;transform:rotate(180deg);"></lord-icon>
                         </span>
                         Thomas Sankara affirmait « <span class="italic">je veux qu’on garde de moi l’image d’un homme qui a mené une vie utile pour tous </span>» s’inscrire dans la même logique s’impose dans un contexte où l’anglais sort de plus en plus l’outil de communication la plus utilisée. 
-Amoureux de la langue anglaise depuis le bas âge, il a été convenu par le biais d’une structure responsable et hautement indispensable au monde contemporain du nom de CAPLA d’accompagner les jeunes étudiants, élèves, professionnels, adeptes et amoureux de la langue dans une maîtrise parfaite et adapté au contexte demandé.
+                        Amoureux de la langue anglaise depuis le bas âge, il a été convenu par le biais d’une structure responsable et hautement indispensable au monde contemporain du nom de CAPLA d’accompagner les jeunes étudiants, élèves, professionnels, adeptes et amoureux de la langue dans une maîtrise parfaite et adapté au contexte demandé.
                     </p>
                     <p>
-                           Les difficultés des jeunes liées à l’assimilation et à la pratique de cette langue présentent,  de nos jours des conséquences inouïes allant jusqu’à les empêcher d’intégrer certains corps. Fort de ce constat, en plus de la mondialisation ainsi que l’utilisation de l’anglais dans tout les domaines (communication, marketing, enseignement, affaires, tourisme), il est devenu légitime pour nous d’activer notre dose d’optimisme et de pragmatisme en encadrant, soutenant et protégeant nos apprenants sur les dérives provoquées par le manque de maîtrise de l’anglais.... 
-Dans un enseignement plus que pédagogique, CAPLA vous fournit un savoir pur, mûr, sûr, qui endure sans rupture et qui sert dans le futur.
+                        Les difficultés des jeunes liées à l’assimilation et à la pratique de cette langue présentent,  de nos jours des conséquences inouïes allant jusqu’à les empêcher d’intégrer certains corps. 
+                        Fort de ce constat, en plus de la mondialisation ainsi que l’utilisation de l’anglais dans tout les domaines (communication, marketing, enseignement, affaires, tourisme), il est devenu légitime pour nous d’activer notre dose d’optimisme et de pragmatisme en encadrant, soutenant et protégeant nos apprenants sur les dérives provoquées par le manque de maîtrise de l’anglais....
+                    </p>
+                    <p>Dans un enseignement plus que pédagogique, CAPLA vous fournit un savoir pur, mûr, sûr, qui endure sans rupture et qui sert dans le futur.
                         <lord-icon src="https://cdn.lordicon.com/xqnbvely.json" trigger="loop" delay="5000" colors="primary:#6b7280,secondary:#08a88a" stroke="30" style="width:50px;height:50px;"></lord-icon>
                     </p>
 
