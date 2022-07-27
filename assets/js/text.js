@@ -13,9 +13,10 @@ const testimonials = [{
         text: `À CAPLA, tout le monde trouve son compte. L’ambiance qui règne au sein de l’établissement et la générosité des professeurs m’ont aidé à mieux apprendre. Les cours sont pertinents et les apprenants sont fortement motivés à prendre la parole, ce qui a très vite amélioré mon expression orale. C’est vraiment facile d’apprendre l’Anglais à CAPLA`
     },
     {
-        fullname: "Kalidou DIA",
-        fonction: "Apprenant",
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odio cum incidunt? Animi explicabo quia ipsum quis eligendi. Esse quam possimus quidem dolorem, numquam iure totam ratione! Sit, mollitia repellat.`
+        fullname: "Tchioukoye Oumar SOW ",
+        fonction: "Chef de projets",
+        text: `Depuis toujours, j’ai eu de grosses difficultés en anglais, surtout dans la pratique. Il y’a quelques mois j’ai enfin décidé de sauter le pas et m’inscrire à CAPLA et depuis j’ai senti une nette amélioration de mon niveau d’anglais. 
+        Les cours étant adaptés à mes besoins, avec une équipe plus que dynamique et surtout très à l’écoute de nos besoins, j’ai pu travailler ma compréhension de langue et fluidité de mon expression. `
     }
 ];
 

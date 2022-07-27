@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="googlemap" class="my-8 bg-gray-100 md:p-4 -mx-6">
+    <div id="googlemap" class="my-8 bg-gray-100 md:p-4 -mx-2 md:-mx-6">
       <GMap
       ref="gMap"
       :cluster="{ options: { styles: clusterStyle } }"
