@@ -35,11 +35,11 @@ import Modalites from '../components/landing/modalites.vue';
 import Temoignage from '../components/landing/temoignage.vue';
 import Partner from '../components/landing/partner.vue'
 
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
-import 'vueperslides/dist/vueperslides.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css'; 
+// import 'vueperslides/dist/vueperslides.css';
 
-AOS.init();
+// AOS.init();
 export default {
   layout:'navbar',
   components:{VueperSlides, VueperSlide, Presentation,Services, Offre, Certificat, Modalites,Temoignage, Partner},

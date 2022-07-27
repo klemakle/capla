@@ -12,7 +12,8 @@
         </div>
 
         <!-- mot du directeur -->
-        <div id="mot_du_directeur" class="px-2 md:px-4 py-4 mx-2 md:mx-12 my-8 border-2 flex flex-col rounded-md justify-between items-center" data-aos="flip-down" data-aos-delay="50">
+        <!-- <div data-aos="flip-down" data-aos-delay="50"> -->
+        <div id="mot_du_directeur" class="px-2 md:px-4 py-4 mx-2 md:mx-12 my-8 border-2 flex flex-col rounded-md justify-between items-center" >
             <div class="text-gray-500 text-3xl underline mb-4">Mot du directeur</div>
             <div class="flex flex-col md:flex-row justify-between items-center md:items-start">
                 <div id="photo_directeur" class="w-1/2 my-2 md:w-full md:mx-4">
@@ -39,25 +40,29 @@
                 </div>
             </div>
         </div>
+        <!-- </div> -->
 
-        <div data-aos="zoom-out-down" data-aos-delay="500" data-aos-duration="1000">
+        <!-- <div data-aos="zoom-out-down" data-aos-delay="500" data-aos-duration="1000"> -->
+        <div >
             <Stats/>
         </div>
+        <!-- </div> -->
     </div>
 </template>
 
 <script>
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// AOS.init({
+//     once: true,
+// }); 
  
 import {photos, breakpoints} from '../../assets/js/about.js';
 import Stats from '../../components/stats.vue'
 import { VueperSlides, VueperSlide } from 'vueperslides';
 import 'vueperslides/dist/vueperslides.css'
 
-AOS.init({
-    once: true,
-});
+
 
 export default {
     layout:'navbar',
