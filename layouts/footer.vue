@@ -10,14 +10,16 @@
           </div>
           <div class="text-gray-500 mt-2">
             <p class="text-gray-300">Notre newsletter</p>
-            <p class="text-lg mt-2">Abonnez-vous à notre newsletter pour ne rien rater</p>
-            <div class=" mt-6 flex justify-start items-center w-max border-gray-400 border h-14 py-2 pl-2 rounded-3xl mr-2">
-              <input type="email" id="newsletter_input" class="border-transparent bg-gray-700 px-2 py-2 h-12 rounded-3xl text-gray-200 md:w-full" placeholder="Enter your mail">
-              <button v-tooltip.bottom-start="{content:'Souscrire', classes: 'text-gray-700 bg-gray-300 px-2 py-1 m-1 rounded-2xl'} " class="px-4 py-2 bg-indigo-400 text-white h-14 rounded-3xl -mr-1">
+            <p class="text-lg mt-2">Abonnez-vous à notre newsletter pour ne rien rater.</p>
+            <div class=" mt-6 flex justify-start items-center w-max border-gray-400 border h-10 md:h-14 py-2 pl-2 rounded-3xl mr-2">
+              <input type="email" id="newsletter_input" class="border-transparent bg-gray-700 px-2 py-0 md:py-2 h-8 md:h-12 rounded-3xl text-gray-200 md:w-full" placeholder="Enter your mail">
+              <button 
+                v-tooltip.bottom-start="{content:'Souscrire', classes: 'text-gray-700 bg-gray-300 px-2 py-1 m-1 rounded-2xl'}"
+                class="px-4 py-1 md:py-2 bg-indigo-400 text-white h-10 md:h-14 rounded-3xl -mr-1">
                 <span class="md:w-32">
-                <lord-icon src="https://cdn.lordicon.com/rhvddzym.json" trigger="hover" colors="primary:#ffffff,secondary:#08a88a" style="width:40px;height:40px"></lord-icon>
+                <lord-icon src="https://cdn.lordicon.com/rhvddzym.json" trigger="hover" colors="primary:#ffffff,secondary:#08a88a" class="w-8 h-8 md:w-10 md:h-10"></lord-icon>
                 </span>
-                </button>
+              </button>
             </div>
           </div>
         </div>
