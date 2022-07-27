@@ -3,6 +3,9 @@
     <!-- presentation -->
     <div><Presentation/></div>
 
+    <!-- partners -->
+    <div class="hidden md:flex"><Partner/></div>
+
     <!-- Services -->
     <div><Services/></div>
 
@@ -21,7 +24,8 @@
     <div><Temoignage/></div>
 
     <!-- partners -->
-    <div><Partner/></div>
+    <div class="flex md:hidden"><Partner/></div>
+
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class=" flex flex-col justify-between items-center bg-gray-50  mx-auto mt-12 py-5 px-10 w-full">
-            <div class="text-gray-300 mb-4 partenaires">Partenaires</div>
+            <div class="text-gray-300 mb-4 partenaires text-gray-400">Partenaires</div>
             <div class="flex flex-row md:flex-row flex-wrap justify-between items-center content-center w-full h-auto text-3xl">
                 <div class="partner w-full md:w-1/4 h-24">
                     <a href="http://www.iadlsenegal.com/" target="blank">IADL SENEGAL</a>
