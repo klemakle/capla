@@ -1,13 +1,13 @@
 const photos = [{
-        image: require('@/assets/images/degree/degree0.jpg'),
+        image: require('~/assets/images/degree/degree1.JPG'),
         title: 'Céremonie de remise de diplômes'
     },
     {
-        image: require('@/assets/images/degree/degree1.jpg'),
+        image: require('~/assets/images/degree/degree1.JPG'),
         title: 'Céremonie de remise de diplômes'
     },
     {
-        image: require('@/assets/images/degree/degree2.jpg'),
+        image: require('~/assets/images/degree/degree2.JPG'),
         title: 'Sortie Gorée 2021'
     }
 
