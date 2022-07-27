@@ -5,7 +5,7 @@
                 <p>Qu'est ce qu'on dit à propos nous ?</p>
             </div>
 
-            <div class="flex flex-col-reverse md:flex-row-reverse justify-between mt-8 md:mt-16">
+            <div class="flex flex-col md:flex-row justify-between mt-8 md:mt-16">
                 <div v-for="(temoin,n) in testimonials" :key="n" class="flex flex-col  md:mx-8 my-8 w-full md:w-1/3">
                     <div class="flex flex-col md:flex-col items-center ">
                         <div class="w-1/4 h-auto mb-2">
