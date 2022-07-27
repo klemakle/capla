@@ -4,7 +4,7 @@
         <div id="logoCapla" class="flex flex-col justify-between mb-4 md:mb-2  w-full md:w-1/3">
           <div class="logo mb-2"> 
             <nuxt-link to="/">
-            <img src="/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo"/>
+            <!-- <img src="/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo"/> -->
             <span class="self-start text-xl font-semibold whitespace-nowrap text-gray-200 dark:text-white">Capla</span>
           </nuxt-link>
           </div>
