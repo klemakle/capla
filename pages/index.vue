@@ -4,7 +4,7 @@
     <div><Presentation/></div>
 
     <!-- partners -->
-    <div class="hidden md:flex"><Partner/></div>
+    <div class="hidden md:block md:w-full"><Partner/></div>
 
     <!-- Services -->
     <div><Services/></div>
