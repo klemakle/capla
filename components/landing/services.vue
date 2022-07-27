@@ -5,10 +5,10 @@
               <p>Ce que nous faisons au <span class="text-indigo-500">Capla</span></p>
             </div>
             <div v-for="(n,index) in type_anglais" :key="index" class="bg-white card border-0 border-gray-200 flex flex-col rounded-xl py-2 px-4 justify-start my-2 w-full md:w-1/2 mx-2 ease-in duration-200 hover:shadow-md">
-                <div class="photo w-16 bg-blue-300 rounded-md h-18 mb-1 mt-2 p-2">
+                <div class="photo w-16 bg-indigo-100 rounded-md h-18 mb-1 mt-2 p-2">
                     <img :src="require(`@/assets/images/evolution${index}.png`)" class="w-full h-auto" alt="leader">
                 </div>
-                <div class="title text-base items-start  text-gray-700 my-1">{{n.text}}</div>
+                <div class="title text-base items-start  text-gray-600 my-1">{{n.text}}</div>
                 <div class="text-card text-gray-400 my-1 w-full items-start text-base">{{n.description}}</div>
             </div>
         </div>

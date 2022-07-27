@@ -1,15 +1,15 @@
 <template>
     <div>
         <div class="flex flex-col justify-between my-20 mx-auto px-10 py-5">
-            <div class="text-3xl md:text-5xl w-full md:w-1/2 text-gray-600 tracking-wider font-medium">
+            <div class="text-3xl md:text-5xl w-full md:w-1/2 text-gray-500 tracking-wider font-medium">
                 <p>Qu'est ce qu'on dit à propos nous ?</p>
             </div>
 
-            <div class="flex flex-col md:flex-row justify-between mt-8 md:mt-16">
+            <div class="flex flex-col-reverse md:flex-row-reverse justify-between mt-8 md:mt-16">
                 <div v-for="(temoin,n) in testimonials" :key="n" class="flex flex-col  md:mx-16 my-8 w-full md:w-1/3">
                     <div class="flex flex-col md:flex-col items-center ">
-                        <div class="w-1/4 mb-2">
-                            <img class="w-full h-auto rounded-full shadow-lg" :src="require(`@/assets/images/temoignage/back/temoin${n}.png`)" alt="">
+                        <div class="w-1/4 h-auto mb-2">
+                            <img class="w-auto h-auto rounded-full shadow-lg" :src="require(`@/assets/images/temoignage/back/temoin${n}.png`)" alt="">
                         </div>
                         <div class="flex flex-col items-center w-auto mx-6">
                             <p class="text-gray-500 text-xl text-center md:text-left font-summer">{{temoin.fullname}}</p>
