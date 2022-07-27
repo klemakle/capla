@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div><Services/></div>
+    <!-- <div><Services/></div> -->
 
     <!-- tableau fiche de services -->
-    <div><Fiche/></div>
+    <div class="mt-12"><Fiche/></div>
 
     <!-- modalités -->
     <div><Modalites/> </div>
