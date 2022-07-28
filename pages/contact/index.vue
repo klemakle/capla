@@ -82,6 +82,9 @@ import {networks} from '@/assets/js/contact.js'
 
 export default {
   layout:'navbar',
+  head:{
+        title: 'Contact',
+  },
   data() {
     return {
       networks,

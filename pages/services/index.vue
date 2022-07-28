@@ -18,5 +18,8 @@ import Modalites from '~/components/landing/modalites.vue';
 export default {
   layout:'navbar',
   components:{Services, Modalites, Fiche},
+  head:{
+        title: 'Services',
+  },
 }
 </script>

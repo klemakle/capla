@@ -66,7 +66,7 @@ export default {
     layout:'navbar',
     components:{VueperSlides, VueperSlide, Stats},
     head:{
-        title: 'A propos',
+        title: 'About',
         script:[
             {src:'https://unpkg.com/vue'},
             {src:'https://unpkg.com/vueperslides'},

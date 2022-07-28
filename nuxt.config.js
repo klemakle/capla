@@ -3,7 +3,7 @@ export default {
     ssr: true,
     target: 'static',
     head: {
-        title: 'capla',
+        title: 'Capla',
         htmlAttrs: {
             lang: 'en'
         },

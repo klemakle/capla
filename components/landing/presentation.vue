@@ -11,7 +11,6 @@
 
                 <div class=" mt-4 flex justify-center md:justify-start mx-auto md:mr-0 items-center w-max border-gray-300 py-2 pl-2 md:-ml-2">
                     <nuxt-link class="px-4 py-4 hover:bg-indigo-500 bg-indigo-400 text-white rounded" to="about">Mot du directeur </nuxt-link>
-                    <!-- <button > Mot du directeur </button> -->
                 </div>
             </div>
             <div class="w-full mb-8 md:mb-0 md:w-3/5 lg:w-1/2 z-0">

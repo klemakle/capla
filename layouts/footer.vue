@@ -14,6 +14,7 @@
             <div class=" mt-6 flex justify-start items-center w-max border-gray-400 border h-10 md:h-14 py-2 pl-2 rounded-3xl mr-2">
               <input type="email" id="newsletter_input" class="border-transparent bg-gray-700 px-2 py-0 md:py-2 h-8 md:h-12 rounded-3xl text-gray-200 md:w-full" placeholder="Enter your mail">
               <button 
+                name="souscription"
                 v-tooltip.bottom-start="{content:'Souscrire', classes: 'text-gray-700 bg-gray-300 px-2 py-1 m-1 rounded-2xl'}"
                 class="px-4 py-1 md:py-2 bg-indigo-400 text-white h-10 md:h-14 rounded-3xl -mr-1">
                 <span class="md:w-32">
@@ -51,16 +52,16 @@
             <p>Suivez nous sur nos réseaux sociaux pour ne rater aucune information.</p>
           </div>
           <div id="social_network" class="flex justify-start mt-3 ">
-            <a href="https://www.facebook.com/capla2.0/" target="blank">
+            <a href="https://www.facebook.com/capla2.0/" target="blank" name="facebook">
               <nuxt-img src="/social/facebook.png" class="text-white opacity-60 hover:opacity-100 mr-3" alt="" />
             </a>
-            <a href="https://www.linkedin.com/in/capla-english-for-all-a93a58238/" target="blank">
+            <a href="https://www.linkedin.com/in/capla-english-for-all-a93a58238/" target="blank" name="linkedin">
               <nuxt-img src="/social/linkedin.png" class="text-white opacity-60 hover:opacity-100 mx-3" alt="" />
             </a>
-            <a href="https://www.instagram.com/invites/contact/?i=19ww33zqaowsv&utm_content=4dwzuqg" target="blank">
+            <a href="https://www.instagram.com/invites/contact/?i=19ww33zqaowsv&utm_content=4dwzuqg" target="blank" name="instagram">
               <nuxt-img src="/social/instagram.png" class="text-white opacity-60 hover:opacity-100 mx-3" alt="" />
             </a>
-            <a href="https://youtube.com/channel/UCEcrQWyVdl8u20CJBH6f4gw" target="blank">
+            <a href="https://youtube.com/channel/UCEcrQWyVdl8u20CJBH6f4gw" target="blank" name="youtube">
               <nuxt-img src="/social/youtube.png" class="text-white opacity-60 hover:opacity-100 mx-3" alt="" />
             </a>
           </div>
