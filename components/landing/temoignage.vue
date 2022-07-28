@@ -9,7 +9,7 @@
                 <div v-for="(temoin,n) in testimonials" :key="n" class="flex flex-col  md:mx-8 my-8 w-full md:w-1/3">
                     <div class="flex flex-col md:flex-col items-center ">
                         <div class="w-1/4 h-auto mb-2">
-                            <img class="w-auto h-auto rounded-full shadow-lg" :src="require(`@/assets/images/temoignage/back/temoin${n}.png`)" alt="">
+                            <nuxt-img provider="static" format="webp" class="w-auto h-auto rounded-full shadow-lg" :src="`/temoignage/back/temoin${n}.png`" alt=""/>
                         </div>
                         <div class="flex flex-col items-center w-auto mx-6">
                             <p class="text-gray-500 text-xl text-center md:text-left font-summer">{{temoin.fullname}}</p>
