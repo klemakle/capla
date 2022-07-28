@@ -1,13 +1,13 @@
 const photos = [{
-        image: require('~/assets/images/degree/degree0.jpeg'),
+        image: require('~/assets/images/degree/reduct/degree0.jpeg'),
         title: 'Céremonie de remise de diplômes'
     },
     {
-        image: require('~/assets/images/degree/degree1.jpeg'),
+        image: require('~/assets/images/degree/reduct/degree1.jpeg'),
         title: 'Céremonie de remise de diplômes'
     },
     {
-        image: require('~/assets/images/degree/degree2.jpeg'),
+        image: require('~/assets/images/degree/reduct/degree2.jpeg'),
         title: 'Céremonie de remise de diplômes'
     }
 
