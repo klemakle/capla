@@ -35,7 +35,7 @@
                         <lord-icon src="https://cdn.lordicon.com/xqnbvely.json" trigger="loop" delay="5000" colors="primary:#6b7280,secondary:#08a88a" stroke="30" style="width:50px;height:50px;"></lord-icon>
                     </p>
 
-                    <p class="text-gray-500 text-right">Elhadj Abdou Sarr</p>
+                    <p class="text-gray-500 text-right">Elhadji Abdou Sarr</p>
                     
                 </div>
             </div>
@@ -43,9 +43,7 @@
         <!-- </div> -->
 
         <!-- <div data-aos="zoom-out-down" data-aos-delay="500" data-aos-duration="1000"> -->
-        <div >
-            <Stats/>
-        </div>
+        <div ><Stats/></div>
         <!-- </div> -->
     </div>
 </template>

@@ -1,4 +1,4 @@
-const presentation = `Le Centre d’Apprentissage Pratique de la Langue Anglaise (CAPLA) est une structure d’accompagnement des professionnels pour l'expression écrite et orale de l’Anglais qui constitue de nos jours un outil incontournable dans le monde du travail`;
+const presentation = `Le Centre d’Apprentissage Pratique de la Langue Anglaise (CAPLA) est une structure d’accompagnement des professionnels, étudiants et élèves pour l'expression écrite et orale de l’Anglais qui constitue de nos jours un outil incontournable dans le monde du travail`;
 
 
 const testimonials = [{
