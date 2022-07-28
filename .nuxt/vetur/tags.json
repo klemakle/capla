@@ -1,0 +1,35 @@
+{
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "Tutorial": {
+    "description": "Auto imported from components/Tutorial.vue"
+  },
+  "Fiche": {
+    "description": "Auto imported from components/fiche.vue"
+  },
+  "Stats": {
+    "description": "Auto imported from components/stats.vue"
+  },
+  "LandingCertificat": {
+    "description": "Auto imported from components/landing/certificat.vue"
+  },
+  "LandingModalites": {
+    "description": "Auto imported from components/landing/modalites.vue"
+  },
+  "LandingOffre": {
+    "description": "Auto imported from components/landing/offre.vue"
+  },
+  "LandingPartner": {
+    "description": "Auto imported from components/landing/partner.vue"
+  },
+  "LandingPresentation": {
+    "description": "Auto imported from components/landing/presentation.vue"
+  },
+  "LandingServices": {
+    "description": "Auto imported from components/landing/services.vue"
+  },
+  "LandingTemoignage": {
+    "description": "Auto imported from components/landing/temoignage.vue"
+  }
+}

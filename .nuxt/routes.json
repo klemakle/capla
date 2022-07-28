@@ -1,0 +1,37 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "/Users/macbookpro/Desktop/projects/capla/pages/about/index.vue",
+    "chunkName": "pages/about/index",
+    "_name": "_5aa15e4d"
+  },
+  {
+    "name": "activity",
+    "path": "/activity",
+    "component": "/Users/macbookpro/Desktop/projects/capla/pages/activity/index.vue",
+    "chunkName": "pages/activity/index",
+    "_name": "_f52aa536"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "/Users/macbookpro/Desktop/projects/capla/pages/contact/index.vue",
+    "chunkName": "pages/contact/index",
+    "_name": "_0404c440"
+  },
+  {
+    "name": "services",
+    "path": "/services",
+    "component": "/Users/macbookpro/Desktop/projects/capla/pages/services/index.vue",
+    "chunkName": "pages/services/index",
+    "_name": "_74329818"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/macbookpro/Desktop/projects/capla/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_04565be2"
+  }
+]
