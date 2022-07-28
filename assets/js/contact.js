@@ -4,7 +4,7 @@ const networks = [{
     },
     {
         image: '/social/social1.png',
-        link: '"https://www.instagram.com/invites/contact/?i=19ww33zqaowsv&utm_content=4dwzuqg'
+        link: 'https://www.instagram.com/invites/contact/?i=19ww33zqaowsv&utm_content=4dwzuqg'
     },
     {
         image: '/social/social2.png',
