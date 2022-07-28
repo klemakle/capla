@@ -51,17 +51,17 @@
             <p>Suivez nous sur nos réseaux sociaux pour ne rater aucune information.</p>
           </div>
           <div id="social_network" class="flex justify-start mt-3 ">
-            <a href="https://www.google.com/" target="blank">
-              <img src="../assets/images/social/facebook.png" class="text-white opacity-60 hover:opacity-100 mr-3" alt="">
+            <a href="https://www.facebook.com/capla2.0/" target="blank">
+              <nuxt-img src="/social/facebook.png" class="text-white opacity-60 hover:opacity-100 mr-3" alt="" />
             </a>
-            <a href="https://www.google.com/" target="blank">
-              <img src="../assets/images/social/twitter.png" class="text-white opacity-60 hover:opacity-100 mx-3" alt="">
+            <a href="https://www.linkedin.com/in/capla-english-for-all-a93a58238/" target="blank">
+              <nuxt-img src="/social/linkedin.png" class="text-white opacity-60 hover:opacity-100 mx-3" alt="" />
             </a>
-            <a href="https://www.google.com/" target="blank">
-              <img src="../assets/images/social/instagram.png" class="text-white opacity-60 hover:opacity-100 mx-3" alt="">
+            <a href="https://www.instagram.com/invites/contact/?i=19ww33zqaowsv&utm_content=4dwzuqg" target="blank">
+              <nuxt-img src="/social/instagram.png" class="text-white opacity-60 hover:opacity-100 mx-3" alt="" />
             </a>
-            <a href="https://www.google.com/" target="blank">
-              <img src="../assets/images/social/youtube.png" class="text-white opacity-60 hover:opacity-100 mx-3" alt="">
+            <a href="https://youtube.com/channel/UCEcrQWyVdl8u20CJBH6f4gw" target="blank">
+              <nuxt-img src="/social/youtube.png" class="text-white opacity-60 hover:opacity-100 mx-3" alt="" />
             </a>
           </div>
         </div>

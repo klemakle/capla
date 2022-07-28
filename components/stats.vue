@@ -6,7 +6,7 @@
             <div class="promotion py-2 px-3 bg-white w-full md:w-1/5 rounded-lg my-4" >
                 <div class="top-card flex flex-row justify-between mb-6">
                 <div class="px-2 py-2 w-1/4 bg-gray-50 self-start rounded-lg -mt-7">
-                    <img src="../assets/images/stats/promotion.png" class="center" alt="promo_alt">
+                    <nuxt-img src="/stats/promotion.png" class="center" alt="promo_alt"/>
                 </div>
                 <div class="flex flex-col justify-start">
                     <p class="text-gray-400">Promotions</p>
@@ -20,7 +20,7 @@
             <div class="py-2 px-3 bg-white w-full md:w-1/5 rounded-lg my-4">
                 <div class="top-card flex flex-row justify-between mb-6">
                 <div class="px-2 py-2 w-1/4 bg-gray-50 self-start rounded-lg -mt-7">
-                    <img src="../assets/images/stats/woman.png" class="center" alt="promo_alt">
+                    <nuxt-img src="/stats/woman.png" class="center" alt="promo_alt"/>
                 </div>
                 <div class="flex flex-col text-gray-400 justify-start">
                     <p class="">Femmes</p>
@@ -34,7 +34,7 @@
              <div class="py-2 px-3 bg-white w-full md:w-1/5 rounded-lg my-4">
                 <div class="top-card flex flex-row justify-between mb-6">
                 <div class="px-2 py-2 w-1/4 bg-gray-50 self-start rounded-lg -mt-7">
-                    <img src="../assets/images/stats/man.png" class="center" alt="promo_alt">
+                    <nuxt-img src="/stats/man.png" class="center" alt="promo_alt"/>
                 </div>
                 <div class="flex flex-col text-gray-400 justify-start">
                     <p class="">Hommes</p>
@@ -48,7 +48,7 @@
              <div class="py-2 px-3 bg-white w-full md:w-1/5 rounded-lg my-4">
                 <div class="top-card flex flex-row justify-between mb-6">
                 <div class="px-2 py-2 w-1/4 bg-gray-50 self-start rounded-lg -mt-7">
-                    <img src="../assets/images/stats/age.png" class="center" alt="promo_alt">
+                    <nuxt-img src="/stats/age.png" class="center" alt="promo_alt"/>
                 </div>
                 <div class="flex flex-col text-gray-400 justify-start">
                     <p>Pour tous</p>

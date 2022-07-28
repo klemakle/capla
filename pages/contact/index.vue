@@ -63,8 +63,10 @@
         </div>
 
         <div class="social-network my-4 flex flex-row w-auto md:w-auto p-2">
-          <div v-for="(n,index) in 4" :key="index" class="w-1/4">
-            <img :src="require(`@/assets/images/social/social${index}.png`)" class="w-1/2 md:w-1/3 h-auto mx-auto" alt="">
+          <div v-for="(n,index) in networks" :key="index" class="w-1/4">
+            <a :href="n.link">
+              <nuxt-img :src="n.image" class="w-1/2 md:w-1/3 h-auto mx-auto" alt="" />
+            </a>
           </div>
         </div>
 
@@ -76,11 +78,13 @@
 
 <script>
 import { locations, mapStyle} from '@/assets/js/map.js' ;
+import {networks} from '@/assets/js/contact.js'
 
 export default {
   layout:'navbar',
   data() {
     return {
+      networks,
       currentLocation: {},
       locationsVisibleOnMap: "",
       locations,
