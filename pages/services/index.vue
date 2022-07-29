@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <div><Services/></div> -->
+    <div><Services/></div>
 
     <!-- tableau fiche de services -->
     <div class="mt-12"><Fiche/></div>
