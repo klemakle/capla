@@ -1,10 +1,9 @@
 <template>
   <div class="flex flex-col items-center justify-between">
-    <div class="w-full  mt-8 bg-gray-700 text-white px-12 md:px-6 py-16 flex flex-col-reverse md:flex-row justify-between items-start text-gray-400">
-        <div id="logoCapla" class="flex flex-col justify-between mb-4 md:mb-2  w-full md:w-1/3">
+    <div class="w-full  mt-8 bg-gray-700 text-white px-12 lg:px-6 py-16 flex flex-col-reverse lg:flex-row justify-between items-start text-gray-400">
+        <div id="logoCapla" class="flex flex-col justify-between mb-4 lg:mb-2  w-full lg:w-1/3">
           <div class="logo mb-2"> 
             <nuxt-link to="/">
-            <!-- <img src="/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo"/> -->
             <span class="self-start text-xl font-semibold whitespace-nowrap text-gray-200 dark:text-white">Capla</span>
           </nuxt-link>
           </div>
@@ -25,7 +24,7 @@
           </div>
         </div>
 
-        <div id="location" class=" flex flex-col w-full text-base md:text-base md:w-1/3 my-10 md:my-0 md:mb-2">
+        <div id="location" class=" flex flex-col w-full text-base lg:text-base lg:w-1/3 my-10 lg:my-0 lg:mb-2">
           <div class="flex justify-start mb-4">
             <div> <span class="material-symbols-outlined">pin_drop</span></div>
             <div class="ml-2"> 163 10ème Riaom Thiès Thiès, 21000 </div>
@@ -46,8 +45,8 @@
           </div>
         </div>
 
-        <div class="about w-full md:w-1/3 mb-12 md:mb-2">
-          <div class="leading-7 text-justify mb-2 text-base md:text-base">
+        <div class="about w-full lg:w-1/3 mb-12 lg:mb-2">
+          <div class="leading-7 text-justify mb-2 text-base lg:text-base">
             <p>Ce centre avec ses experts bilingues développe des cours intensifs avec un laboratoire linguistique s’appuyant sur des technologies modernes tout en se focalisant sur la pratique des métiers.</p>
             <p>Suivez nous sur nos réseaux sociaux pour ne rater aucune information.</p>
           </div>

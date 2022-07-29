@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="googlemap" class="my-8 bg-gray-100 md:p-4 -mx-2 md:-mx-6">
+    <!-- <div id="googlemap" class="my-8 bg-gray-100 md:p-4 -mx-2 md:-mx-6">
       <GMap
       ref="gMap"
       :cluster="{ options: { styles: clusterStyle } }"
@@ -37,7 +37,7 @@
         </GMapInfoWindow>
       </GMapMarker>
     </GMap>
-    </div>
+    </div> -->
 
     <div id="contactForm" class="mx-10 border-2 p-4 -mx-2 ">
       <div id="contactUs" class=" flex flex-col justify-center items-center w-full">
