@@ -67,7 +67,7 @@
         </div>
     </div>
 
-    <div class="bg-gray-900 w-full flex justify-center items-center py-4">
+    <div class="bg-gray-800 w-full flex justify-center items-center py-4">
         <p class="text-gray-400">© Copyright <a href="https://klema.herokuapp.com/" class="hover:text-gray-400 text-gray-300" target="blank">@Aethelwulf</a>. ALL Rights Reserved</p>
     </div>
   </div>

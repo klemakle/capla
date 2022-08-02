@@ -76,7 +76,7 @@
         </div>
 
         <div class="hidden w-full md:block md:w-auto">
-          <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+          <ul class=" menu-list flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
             <li>
              <nuxt-link
                 to="about"

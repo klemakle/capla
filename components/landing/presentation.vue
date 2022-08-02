@@ -7,10 +7,10 @@
                     <p class="py-1 lg:my-auto md:py-1 lg:py-3 flex items-center md:h-auto"><span class="text-indigo-500">L'anglais &nbsp;</span> pour &nbsp;</p>
                     <p class="py-1 lg:my-auto md:py-1 lg:py-3 flex items-center">Tous <span><lord-icon src="https://cdn.lordicon.com/pvucrfqe.json" trigger="loop" delay="3000" colors="primary:#faefd1,secondary:#f4dc9c" class="w-10 h-10 md:w-14 md:h-14 lg:w-24 lg:h-24"></lord-icon></span></p>
                 </div>
-                <p class="my-2 md:pr-2 leading-5 text-gray-500 md:text-sm lg:text-lg lg:leading-6 text-justify">{{presentation_text}}</p>
+                <p class="my-2 md:pr-2 leading-5 text-gray-500 md:text-sm lg:text-lg lg:leading-6">{{presentation_text}}</p>
 
                 <div class=" mt-4 flex justify-center md:justify-start mx-auto md:mr-0 items-center w-max border-gray-300 py-2 pl-2 md:-ml-2">
-                    <nuxt-link class="px-4 py-4 hover:bg-indigo-500 bg-indigo-400 text-white rounded" to="about">Mot du directeur </nuxt-link>
+                    <nuxt-link class="px-6 py-4 get-started flex hover:bg-indigo-500 bg-indigo-400 text-white rounded" to="about"><span class="mr-2 ceo">Mot du directeur</span> <span class="arrow material-symbols-outlined">trending_flat</span> </nuxt-link>
                 </div>
             </div>
             <div class="w-full mb-8 md:mb-0 md:w-3/5 lg:w-1/2 z-0">
@@ -20,14 +20,28 @@
     </div>
 </template>
 
+
 <script>
 import {presentation} from '../../assets/js/text';
 export default {
   data() {
     return{
-        presentation_text:presentation,
+        presentation_text: presentation,
     }
   }
 }
 </script>
 
+
+<style>
+.get-started > .arrow{
+    opacity: 0;
+    margin-left: -20px ;
+    transition: .25s all;
+}
+
+.get-started:hover > .arrow{
+    opacity: 1;
+    margin-left:.5rem;
+}
+</style>
