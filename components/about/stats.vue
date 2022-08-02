@@ -3,9 +3,7 @@
         <section class="bg-white">
   <div class="max-w-screen-xl px-4 py-12 mx-auto md:py-16 sm:px-6 lg:px-8">
     <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-indigo-600 sm:text-4xl">
-        Trusted by eCommerce Businesses
-      </h2>
+      <h2 class="text-3xl font-bold text-indigo-500 sm:text-4xl">Capla en chiffre</h2>
 
       <p class="mt-4 text-gray-400 sm:text-xl">
         En enseignant l'anglais, nous voulons que les gens soient mis au défi dans leur réflexion et 
@@ -22,7 +20,7 @@
             Promotions
           </dt>
 
-          <dd class="text-4xl font-extrabold text-indigo-500 md:text-5xl">
+          <dd class="text-4xl mb-2 font-bold text-indigo-500 md:text-5xl">
             11
           </dd>
         </div>
@@ -34,7 +32,7 @@
             Personnes formées
           </dt>
 
-          <dd class="text-4xl font-extrabold text-indigo-500 md:text-5xl">+<span id="people"></span>300</dd>
+          <dd class="text-4xl mb-2 font-bold text-indigo-500 md:text-5xl">+<span id="people"></span>300</dd>
         </div>
 
         <div
@@ -44,7 +42,7 @@
             Pour tous les âges
           </dt>
 
-          <dd class="text-4xl font-extrabold text-indigo-500 md:text-5xl">8 - 55</dd>
+          <dd class="text-4xl mb-2 font-bold text-indigo-500 md:text-5xl">8 - 55</dd>
         </div>
       </dl>
     </div>
