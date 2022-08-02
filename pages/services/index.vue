@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div><Services/></div>
+    <div><Sommaire/></div>
 
     <!-- tableau fiche de services -->
     <div class="mt-12"><Fiche/></div>
@@ -13,11 +13,12 @@
 <script>
 
 import Services from '~/components/landing/services.vue';
-import Fiche from '~/components/fiche.vue'
+import Sommaire from '~/components/services/sommaire.vue';
+import Fiche from '~/components/services/fiche.vue'
 import Modalites from '~/components/landing/modalites.vue';
 export default {
   layout:'navbar',
-  components:{Services, Modalites, Fiche},
+  components:{Services, Modalites, Fiche, Sommaire},
   head:{
         title: 'Services',
   },

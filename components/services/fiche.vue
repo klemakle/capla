@@ -1,5 +1,6 @@
 <template>
      <div class="md:mx-2">
+        <div class="mx-auto flex justify-center items-center mb-2 text-indigo-400 font-bold">Tableau détaillé</div>
       <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
           <table class="w-full text-sm text-left text-gray-600 dark:text-gray-400 text-left">
               <thead class="text-xs text-white uppercase bg-indigo-400 dark:text-gray-400">

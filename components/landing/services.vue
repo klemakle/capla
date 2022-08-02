@@ -4,7 +4,7 @@
             <div class="w-full md:w-2/3 lg:w-1/2  flex flex-col items-center md:items-start  px-4 py-2 md:px-2 text-gray-600">
               <p class="text-xl md:text-xl lg:text-3xl">Ce que nous faisons au <span class="text-indigo-500 ">Capla</span></p>
               <div class=" mt-2 md:mt-4  flex justify-center md:justify-start mx-auto md:mr-0 items-center w-max border-gray-300 py-2 pl-2 md:-ml-2">
-                    <nuxt-link class="px-2 py-4 md:px-6 md:py-4 get-started flex hover:bg-indigo-500 bg-indigo-400 text-white rounded" to="services"><span class="mr-0 ceo">Voir plus</span> <span class="arrow material-symbols-outlined">add</span> </nuxt-link>
+                    <nuxt-link class="px-3 py-2 md:px-6 md:py-4 get-started flex hover:bg-indigo-500 bg-indigo-400 text-white rounded" to="services"><span class="mr-0 ceo">Voir plus</span> <span class="arrow material-symbols-outlined">add</span> </nuxt-link>
             </div>
             </div>
             <div class="flex flex-col md:flex-row flex-nowrap">
