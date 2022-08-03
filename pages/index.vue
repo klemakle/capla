@@ -86,10 +86,8 @@ export default {
     //   }
     // },
     async callNuxtApi() {
-      console.log("----- API call -----")
       try {
         const response = await axios.get('api/current-session',)
-        console.log("-----Kalidou---- ",response.data)
         this.response = response.data.message 
         this.session = response.data.session.session
         this.debut = response.data.session.debut
