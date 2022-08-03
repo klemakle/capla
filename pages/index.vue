@@ -3,6 +3,9 @@
     <!-- presentation -->
     <div><Presentation/></div>
 
+
+<div class="mx-10">{{response}}</div>
+
     <!-- partners -->
     <div class="hidden md:block md:w-full"><Partner/></div>
 
@@ -14,7 +17,7 @@
 
     <!-- prochaine rentrée -->
     <div><Start/></div>
-    
+
     <!-- delivrance certificat -->
     <div><Certificat/></div>
 
@@ -54,7 +57,21 @@ export default {
     name: 'home',
     mode: 'out-in'
   },
+  data(){
+    return{
+        response:''
+    }
+  },
   components:{VueperSlides, VueperSlide, Presentation,Services, Offre, Start,Certificat, Modalites,Temoignage, Partner},
+  methods: {
+    async callNuxtApi() {
+      const response = await this.$axios.get( `api/hello`)
+      this.response = response
+    },
+  },
+    mounted(){
+    this.callNuxtApi()
+  }
 }
 </script>
 

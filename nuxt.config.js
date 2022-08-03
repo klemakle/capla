@@ -47,12 +47,18 @@ export default {
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
         [
-            "nuxt-gmaps",
+            'nuxt-gmaps',
+            '@nuxtjs/axios',
             {
                 key: 'AIzaSyDRmCh8-3LoLwg9CrUx4O0JUnTvaPoxEdQ'
             }
         ]
     ],
+
+    axios: {
+        // extra config e.g
+        BaseURL: 'http://localhost:3000/'
+    },
 
     serverMiddleware: [
         { path: '/api', handler: '~/express/index.js' },

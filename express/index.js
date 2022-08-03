@@ -23,4 +23,4 @@ app.put('/new-session', (req, res) => {
     })
 })
 
-module.exports = app
+module.exports = app;
