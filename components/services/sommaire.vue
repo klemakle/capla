@@ -1,5 +1,5 @@
 <template>
-    <div class="-mx-4">
+    <div class="-mx-2 md:-mx-4">
         <section class="text-gray-600 bg-gray-50">
   <div class="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div class="max-w-xl">
