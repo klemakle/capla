@@ -13,7 +13,7 @@
 
         <!-- mot du directeur -->
         <!-- <div data-aos="flip-down" data-aos-delay="50"> -->
-        <div id="mot_du_directeur" class="px-2 md:px-4 py-4 mx-2 md:mx-12 my-8 border-2 flex flex-col rounded-md justify-between items-center" >
+        <div id="mot_du_directeur" class="px-2 md:px-4 py-4 mx-2 md:mx-12 my-8 border-2 border-gray-100 flex flex-col rounded-md justify-between items-center" >
             <div class="text-gray-500 text-3xl underline mb-4">Mot du directeur</div>
             <div class="flex flex-col md:flex-row justify-between items-center md:items-start">
                 <div id="photo_directeur" class="w-1/2 my-2 md:w-full md:mx-4">

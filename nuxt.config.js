@@ -57,7 +57,7 @@ export default {
 
     axios: {
         // extra config e.g
-        BaseURL: 'http://localhost:3000/'
+        BaseURL: '/'
     },
 
     serverMiddleware: [

@@ -4,7 +4,7 @@
     <div><Presentation/></div>
 
 
-<div class="mx-10">{{response}}</div>
+<!-- <div class="mx-10">{{response}}</div> -->
 
     <!-- partners -->
     <div class="hidden md:block md:w-full"><Partner/></div>
@@ -46,6 +46,8 @@ import Modalites from '../components/landing/modalites.vue';
 import Temoignage from '../components/landing/temoignage.vue';
 import Partner from '../components/landing/partner.vue'
 
+import axios from 'axios';
+
 // import AOS from 'aos';
 // import 'aos/dist/aos.css'; 
 // import 'vueperslides/dist/vueperslides.css';
@@ -59,14 +61,22 @@ export default {
   },
   data(){
     return{
-        response:''
+        response:'',
     }
   },
   components:{VueperSlides, VueperSlide, Presentation,Services, Offre, Start,Certificat, Modalites,Temoignage, Partner},
   methods: {
     async callNuxtApi() {
-      const response = await this.$axios.get( `api/hello`)
-      this.response = response
+      const kalidou ="kals"
+      const deb= "hier"
+      console.log("----- API call -----")
+      try {
+        const response = await axios.post('api/new-session', {kalidou,deb})
+        console.log("-----Kalidou---- ",response.data)
+        this.response = response.data.message 
+      } catch (error) {
+        console.log(error)
+      }
     },
   },
     mounted(){
