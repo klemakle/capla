@@ -41,7 +41,7 @@ export default {
         '@nuxt/image',
     ],
     image: {
-        dir: './assets/images'
+        dir: '@/assets/images'
     },
 
     // Modules: https://go.nuxtjs.dev/config-modules

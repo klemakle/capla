@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="w-full mb-8 md:mb-0 md:w-3/5 lg:w-1/2 z-0">
-                <nuxt-img format="webp" class="w-full h-auto" src="/capla.svg" alt="capla"/>
+                <img format="webp" class="w-full h-auto" src="@/assets/images/capla.svg" alt="capla"/>
             </div>
         </div>
     </div>
