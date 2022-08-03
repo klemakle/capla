@@ -4,6 +4,9 @@ const { callbackify } = require('util');
 var session = require('./session.json');
 
 const app = express();
+module.exports = { path: '/api', handler: app }
+
+
 app.use(express.json());
 
 app.get('/hello', (req, res) => {
@@ -43,6 +46,4 @@ app.post('/new-session', (req, res) => {
             })
         }
     })
-})
-
-module.exports = app;
+});
