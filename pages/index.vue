@@ -67,11 +67,11 @@ export default {
   components:{VueperSlides, VueperSlide, Presentation,Services, Offre, Start,Certificat, Modalites,Temoignage, Partner},
   methods: {
     async callNuxtApi() {
-      const kalidou ="kals"
-      const deb= "hier"
+      const session ="kals"
+      const debut= "hier"
       console.log("----- API call -----")
       try {
-        const response = await axios.post('api/new-session', {kalidou,deb})
+        const response = await axios.post('api/new-session', {session,debut})
         console.log("-----Kalidou---- ",response.data)
         this.response = response.data.message 
       } catch (error) {
