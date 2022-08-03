@@ -18,6 +18,10 @@ import Fiche from '~/components/services/fiche.vue'
 import Modalites from '~/components/landing/modalites.vue';
 export default {
   layout:'navbar',
+   transition: {
+    name: 'home',
+    mode: 'out-in'
+  },
   components:{Services, Modalites, Fiche, Sommaire},
   head:{
         title: 'Services',

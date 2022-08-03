@@ -1,6 +1,6 @@
 <template>
     <div class="-mx-4">
-        <section class="text-gray-600 bg-gray-100">
+        <section class="text-gray-600 bg-gray-50">
   <div class="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div class="max-w-xl">
       <h2 class="text-3xl font-bold sm:text-4xl">Trouvez votre demande </h2>

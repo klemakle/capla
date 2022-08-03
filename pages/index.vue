@@ -46,6 +46,10 @@ import Partner from '../components/landing/partner.vue'
 // AOS.init();
 export default {
   layout:'navbar',
+   transition: {
+    name: 'home',
+    mode: 'out-in'
+  },
   components:{VueperSlides, VueperSlide, Presentation,Services, Offre, Certificat, Modalites,Temoignage, Partner},
 }
 </script>
@@ -61,4 +65,7 @@ export default {
   #newsletter_input:focus{
     outline:0;
   }
+
+  .home-enter-active, .home-leave-active { transition: opacity .5s; }
+  .home-enter, .home-leave-active { opacity: 0; }
 </style>

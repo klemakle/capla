@@ -82,6 +82,10 @@ import {networks} from '@/assets/js/contact.js'
 
 export default {
   layout:'navbar',
+  transition: {
+    name: 'home',
+    mode: 'out-in'
+  },
   head:{
         title: 'Contact',
   },
