@@ -6,11 +6,11 @@
                     Prochaine rentrée
                 </div>
                 <div class="text-indigo-50 my-2 font-bold text-2xl md:text-5xl font-russo ">
-                    Session d'été
+                    {{nomSession}}
                 </div>
 
                 <div class="text-indigo-50 my-2 font-bold text-2xl md:text-5xl font-russo ">
-                    17 Juillet 2022
+                    {{debut}}
                 </div>
             </div>
         </div>
@@ -19,6 +19,7 @@
 
 <script>
 export default {
-    name: 'start'
+    name: 'start',
+    props:['nomSession', 'debut']
 }
 </script>

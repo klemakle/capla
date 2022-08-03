@@ -16,7 +16,12 @@
     <div><Offre/></div>
 
     <!-- prochaine rentrée -->
-    <div><Start/></div>
+    <div>
+      <Start
+          :nomSession="session"
+          :debut="debut"
+        />
+      </div>
 
     <!-- delivrance certificat -->
     <div><Certificat/></div>
@@ -62,18 +67,32 @@ export default {
   data(){
     return{
         response:'',
+        session:'',
+        debut:''
     }
   },
   components:{VueperSlides, VueperSlide, Presentation,Services, Offre, Start,Certificat, Modalites,Temoignage, Partner},
   methods: {
+    // async callNuxtApi() {
+    //   const session ="kals"
+    //   const debut= "hier"
+    //   console.log("----- API call -----")
+    //   try {
+    //     const response = await axios.get('api/new-session', {session,debut})
+    //     console.log("-----Kalidou---- ",response.data)
+    //     this.response = response.data.message 
+    //   } catch (error) {
+    //     console.log(error)
+    //   }
+    // },
     async callNuxtApi() {
-      const session ="kals"
-      const debut= "hier"
       console.log("----- API call -----")
       try {
-        const response = await axios.post('api/new-session', {session,debut})
+        const response = await axios.get('api/current-session',)
         console.log("-----Kalidou---- ",response.data)
         this.response = response.data.message 
+        this.session = response.data.session.session
+        this.debut = response.data.session.debut
       } catch (error) {
         console.log(error)
       }
