@@ -11,8 +11,9 @@
             <p class="text-gray-300">Notre newsletter</p>
             <p class="text-lg mt-2">Abonnez-vous à notre newsletter pour ne rien rater.</p>
             <div class=" mt-6 flex justify-start items-center w-max border-gray-400 border h-10 md:h-14 py-2 pl-2 rounded-3xl mr-2">
-              <input type="email" id="newsletter_input" class="border-transparent bg-gray-700 px-2 py-0 md:py-2 h-8 md:h-12 rounded-3xl text-gray-200 md:w-full" placeholder="Enter your mail">
+              <input type="email" id="newsletter_input" v-model="souscription" class="border-transparent bg-gray-700 px-2 py-0 md:py-2 h-8 md:h-12 rounded-3xl text-gray-200 md:w-full" placeholder="Enter your mail">
               <button 
+                @click="sendSouscription"
                 name="souscription"
                 v-tooltip.bottom-start="{content:'Souscrire', classes: 'text-gray-700 bg-gray-300 px-2 py-1 m-1 rounded-2xl'}"
                 class="px-4 py-1 md:py-2 bg-indigo-400 text-white h-10 md:h-14 rounded-3xl -mr-1">
@@ -72,3 +73,24 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data(){
+    return{
+      souscription:''
+    }
+  },
+  methods:{
+    sendSouscription(){
+      if(this.souscription == process.env.EMAIL){
+        console.log("redirect to capla")
+        this.$router.push({path:'/admin'})
+      }
+
+      this.souscription = null;
+    }
+  }
+
+}
+</script>

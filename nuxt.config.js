@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     ssr: true,
@@ -47,6 +49,7 @@ export default {
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
         [
+            '@nuxtjs/dotenv',
             'nuxt-gmaps',
             '@nuxtjs/axios',
             {
