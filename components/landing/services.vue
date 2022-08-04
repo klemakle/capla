@@ -3,7 +3,7 @@
         <div class="flex flex-col xl:flex-row bg-gray-50 mx-auto mb-12 mt-8 lg:my-12 md:my-20 py-10 px-10 w-full ">
             <div class="w-full md:w-2/3 lg:w-1/2  flex flex-col items-center md:items-start  px-4 py-2 md:px-2 text-gray-600">
               <p class="text-xl md:text-xl lg:text-3xl">Ce que nous faisons au <span class="text-indigo-500 ">Capla</span></p>
-              <div class=" mt-2 md:mt-4  flex justify-center md:justify-start mx-auto md:mr-0 items-center w-max border-gray-300 py-2 pl-2 md:-ml-2">
+              <div class="hidden  mt-2 md:mt-4  lg:flex justify-center md:justify-start mx-auto md:mr-0 items-center w-max border-gray-300 py-2 pl-2 md:-ml-2">
                     <nuxt-link class="px-3 py-2 md:px-6 md:py-4 get-started flex hover:bg-indigo-500 bg-indigo-400 text-white rounded" to="services"><span class="mr-0 ceo">Voir plus</span> <span class="arrow material-symbols-outlined">add</span> </nuxt-link>
             </div>
             </div>
@@ -17,6 +17,10 @@
                 </div>
                     <div class="text-gray-400 my-1 w-full items-start text-sm lg:text-base">{{n.description}}</div>
                 </div>
+            </div>
+
+            <div class="flex lg:hidden items-center mx-auto mt-4">
+                <nuxt-link class="px-3 py-2 lg:px-6 lg:py-4 get-started flex hover:bg-indigo-500 bg-indigo-400 text-white rounded" to="services"><span class="mr-0 ceo">Voir plus</span> <span class="arrow material-symbols-outlined">add</span> </nuxt-link>
             </div>
         </div>
     </div>
