@@ -53,11 +53,6 @@ import Partner from '../components/landing/partner.vue'
 
 import axios from 'axios';
 
-// import AOS from 'aos';
-// import 'aos/dist/aos.css'; 
-// import 'vueperslides/dist/vueperslides.css';
-
-// AOS.init();
 export default {
   layout:'navbar',
    transition: {

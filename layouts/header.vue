@@ -7,7 +7,7 @@
         class="container flex flex-wrap justify-between items-center mx-auto"
       >
         <nuxt-link to="/" class="flex items-center">
-          <img src="@/assets/images/logo.jpg" class="py-1 mr-0 h-12 sm:h-18 lg:h-24" alt="Logo Capla">
+          <img src="@/assets/images/logo.jpg" class="py-1 md:mx-4  h-12 sm:h-18 lg:h-24" alt="Logo Capla">
           <!-- <span class="self-center text-xl font-semibold text-indigo-500 whitespace-nowrap dark:text-white">Capla</span> -->
         </nuxt-link>
         <button 
