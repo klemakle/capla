@@ -17,7 +17,7 @@
             <div class="text-gray-500 text-3xl underline mb-4">Mot du directeur</div>
             <div class="flex flex-col md:flex-row justify-between items-center md:items-start">
                 <div id="photo_directeur" class="w-1/2 my-2 md:w-full md:mx-4">
-                    <nuxt-img format="webp" src="/avatar/directeur.jpeg" alt="photo du directeur" class="rounded-3xl mx-auto w-auto"/>
+                    <img format="webp" src="@/assets/images/avatar/directeur.jpeg" alt="photo du directeur" class="rounded-3xl mx-auto w-auto"/>
                 </div>
                 <div class="text-gray-400 text-base md:text-xl leading-7 md:leading-9 tracking-wide text-justify mx-4" data-aos="zoom-in-left" data-aos-delay="500" data-aos-duration="1000">
                     <p> 
