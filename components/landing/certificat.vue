@@ -45,13 +45,13 @@ export default {
 
 <style>
 .vueperslides__bullet .default {
-  background-color: #e0e7ff;
-  border: none;
-  box-shadow: none;
+  background-color: #e0e7ff !important;
+  border: none !important;
+  box-shadow: none !important;
   transition: 0.3s;
-  width: 16px;
-  height: 16px;
+  width: 16px !important;
+  height: 16px !important;
 }
 
-.vueperslides__bullet--active .default {background-color:#818cf8;}
+.vueperslides__bullet--active .default {background-color:#818cf8 !important;}
 </style>
