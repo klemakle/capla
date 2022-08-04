@@ -65,7 +65,7 @@
         <div class="social-network my-4 flex flex-row w-auto md:w-auto p-2">
           <div v-for="(n,index) in networks" :key="index" class="w-1/4">
             <a :href="`${n.link}`" target="_blank">
-              <nuxt-img :src="n.image" class="w-1/2 md:w-1/3 h-auto mx-auto" alt="" />
+              <img :src="n.image" class="w-1/2 md:w-1/3 h-auto mx-auto" alt="" />
             </a>
           </div>
         </div>
