@@ -58,6 +58,10 @@ export default {
         ]
     ],
 
+    env: {
+        baseURL: process.env.NODE_ENV === 'production' ? 'https://capla.herokuapp.com/' : 'http://localhost:3000/'
+    },
+
     axios: {
         // extra config e.g
         BaseURL: '/'
