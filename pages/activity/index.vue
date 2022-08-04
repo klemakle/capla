@@ -8,7 +8,7 @@
 export default {
   layout:'navbar',
   head:{
-        title: 'Activity',
+        title: 'Activité',
   }
 }
 </script>

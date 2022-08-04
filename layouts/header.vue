@@ -1,14 +1,14 @@
 <template>
   <div>
     <nav
-      class="bg-white border-gray-200 px-6 sm:px-4 py-2.5 rounded dark:bg-gray-800"
+      class="bg-white border-gray-200 px-6 sm:px-4 py-0 rounded dark:bg-gray-800"
     >
       <div
         class="container flex flex-wrap justify-between items-center mx-auto"
       >
         <nuxt-link to="/" class="flex items-center">
-          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Capla</span
-          >
+          <img src="@/assets/images/logo.jpg" class="py-1 mr-0 h-12 sm:h-18 lg:h-24" alt="Logo Capla">
+          <!-- <span class="self-center text-xl font-semibold text-indigo-500 whitespace-nowrap dark:text-white">Capla</span> -->
         </nuxt-link>
         <button 
           @click="showMobileMenu"
@@ -45,7 +45,7 @@
           </svg>
         </button>
         <div id="mobile-menu" v-if="mobileMenuVisible">
-          <div class="absolute rounded-md z-10 flex flex-col justify-between items-center text-gray-500 bg-white shadow-lg top-2 px-6 py-4 left-1 right-1 w-full justify-between items-center">
+          <div class="absolute rounded-md z-10 flex flex-col justify-between items-center text-gray-500 bg-white shadow-lg top-1 px-6 py-4 left-1 right-1 w-full justify-between items-center">
             <div class="mb-2 self-end top-1 -mt-2" tabindex="0"> <span class="text-indigo-700 material-symbols-outlined" @click="closeMobileMenu">close</span> </div>
             <div class="mb-4 mt-2"> 
               <nuxt-link

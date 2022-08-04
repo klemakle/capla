@@ -3,7 +3,7 @@
     <div class="w-full  mt-8 bg-gray-700 text-white px-12 lg:px-6 py-16 flex flex-col-reverse lg:flex-row justify-between items-start text-gray-400">
         <div id="logoCapla" class="flex flex-col justify-between mb-4 lg:mb-2  w-full lg:w-1/3">
           <div class="logo mb-2"> 
-            <nuxt-link to="/">
+          <nuxt-link to="/">
             <span class="self-start text-xl font-semibold whitespace-nowrap text-gray-200 dark:text-white">Capla</span>
           </nuxt-link>
           </div>
