@@ -10,7 +10,7 @@
                     <a href="https://web.facebook.com/Thiesenmarche/?_rdc=1&_rdr" target="blank">THIES EN MARCHE</a>
                 </div>
                 <div class="partner w-full md:w-1/4 h-24">
-                    <a href="https://instagram.com/mac_language_arts?igshid=YmMyMTA2M2Y=" target="blank">MAC CENTER</a>
+                    <a href="https://instagram.com/cayor_solution_tour?igshid=YmMyMTA2M2Y=" target="blank">CAYOR SOLUTION TOUR</a>
                 </div>
                 <div class="partner w-full md:w-1/4 h-24">
                     <a href="https://fafaloprogram.org/" target="blank">FAFALO PROGRAM</a>
