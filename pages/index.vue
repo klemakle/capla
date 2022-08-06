@@ -91,9 +91,12 @@ export default {
       }
     },
   },
-    mounted(){
-    this.callNuxtApi()
-  }
+  mounted(){
+  this.callNuxtApi();
+    Weglot.initialize({
+      api_key: `${process.env.WEGLOT_KEY}`
+  });
+}
 }
 </script>
 

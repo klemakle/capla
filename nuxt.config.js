@@ -22,6 +22,10 @@ export default {
         ],
         script: [
             { src: 'https://cdn.lordicon.com/xdjxvujz.js' },
+            {
+                type: 'text/javascript',
+                src: "https://cdn.weglot.com/weglot.min.js",
+            },
         ]
     },
 
@@ -58,8 +62,12 @@ export default {
         ]
     ],
 
-    publicRuntimeConfig: {
-        baseURL: process.env.NODE_ENV === 'production' ? 'https://capla.herokuapp.com/' : 'http://localhost:3000/'
+    env: {
+        // baseURL: process.env.NODE_ENV === 'production' ? 'https://capla.herokuapp.com/' : 'http://localhost:3000/',
+        password_capla: process.env.PASSWORD,
+        EMAIL: process.env.EMAIL,
+        node_env: process.env.NODE_ENV,
+        WEGLOT_KEY: process.env.WEGLOT_KEY
     },
 
     axios: {

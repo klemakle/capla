@@ -21,7 +21,7 @@
           </dt>
 
           <dd class="text-4xl mb-2 font-bold text-indigo-500 md:text-5xl">
-            11
+            <span id="promo"></span>
           </dd>
         </div>
 
@@ -32,7 +32,7 @@
             Personnes formées
           </dt>
 
-          <dd class="text-4xl mb-2 font-bold text-indigo-500 md:text-5xl">+<span id="people"></span>300</dd>
+          <dd class="text-4xl mb-2 font-bold text-indigo-500 md:text-5xl">+<span id="people"></span></dd>
         </div>
 
         <div
@@ -54,40 +54,42 @@
 
 <script>
 export default {
-  //  methods: {
-  //   animate(obj, initVal, lastVal, duration) {
-  //        let startTime = null;
+   methods: {
+    animate(obj, initVal, lastVal, duration) {
+         let startTime = null;
 
-  //     //get the current timestamp and assign it to the currentTime variable
-  //     let currentTime = Date.now();
+      //get the current timestamp and assign it to the currentTime variable
+      let currentTime = Date.now();
 
-  //     //pass the current timestamp to the step function
-  //     const step = (currentTime ) => {
+      //pass the current timestamp to the step function
+      const step = (currentTime ) => {
 
-  //     //if the start time is null, assign the current time to startTime
-  //     if (!startTime) {
-  //        startTime = currentTime ;
-  //     }
-  //      //calculate the value to be used in calculating the number to be displayed
-  //     const progress = Math.min((currentTime - startTime)/ duration, 1);
+      //if the start time is null, assign the current time to startTime
+      if (!startTime) {
+         startTime = currentTime ;
+      }
+       //calculate the value to be used in calculating the number to be displayed
+      const progress = Math.min((currentTime - startTime)/ duration, 1);
 
-  //     //calculate what to be displayed using the value gotten above
-  //     obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+      //calculate what to be displayed using the value gotten above
+      obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
 
-  //     //checking to make sure the counter does not exceed the last value (lastVal)
-  //     if (progress < 1) {
-  //        window.requestAnimationFrame(step);
-  //     } else {
-  //           window.cancelAnimationFrame(window.requestAnimationFrame(step));
-  //        }
-  //     };
-  //     //start animating
-  //        window.requestAnimationFrame(step);
-  //     }
-  // },
-  // mounted(){
-  //   const text1=document.querySelector("#people");
-  //   this.animate(text1, 0, 300, 3000);
-  // }
+      //checking to make sure the counter does not exceed the last value (lastVal)
+      if (progress < 1) {
+         window.requestAnimationFrame(step);
+      } else {
+            window.cancelAnimationFrame(window.requestAnimationFrame(step));
+         }
+      };
+      //start animating
+         window.requestAnimationFrame(step);
+      }
+  },
+  mounted(){
+    const people=document.querySelector("#people");
+    const promo=document.querySelector("#promo");
+    this.animate(promo, 0,12, 3000);
+    this.animate(people, 0, 400, 3000);
+  }
 }
 </script>

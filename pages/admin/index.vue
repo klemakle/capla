@@ -107,7 +107,7 @@ export default{
             this.messageError = null
         },
         async createSession(){
-            if(this.password !== process.env.PASSWORD){
+            if(this.password !== process.env.password_capla){
                 this.messageError = 'Mot de passe incorrect';
                 return;
             } else{
