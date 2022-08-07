@@ -42,20 +42,25 @@
     <div id="contactForm" class="mx-10 border-2 p-4 -mx-2 ">
       <div id="contactUs" class=" flex flex-col justify-center items-center w-full">
         <div class="w-auto text-gray-600 text-3xl md:text-6xl my-4"> Contactez nous</div>
+
+         <p
+          class="px-2 max-w-md mx-auto mt-4 text-center text-red-400 border-2 border-red-100  rounded-md bg-red-50">
+          Erreur message
+        </p>
         
         <div class="input-text w-full md:w-1/2 my-10">
           <div class="app-form-group my-8">
-            <input class="app-form-control" type="email" placeholder="EMAIL">
+            <input class="app-form-control" type="email" v-model="emailContact" placeholder="EMAIL">
           </div>
           <div class="app-form-group my-8">
-            <input class="app-form-control" type="text" placeholder="NOM">
+            <input class="app-form-control" type="text" v-model="nameContact" placeholder="NOM">
           </div>
           <div class="app-form-group my-8">
-            <textarea class="app-form-control" placeholder="MESSAGE" rows="5" cols="33"></textarea>
+            <textarea class="app-form-control" v-model="messageContact" placeholder="MESSAGE" rows="5" cols="33"></textarea>
           </div>
 
           <div class="justify-self-end text-right mx-2 my-auto">
-            <button class="app-form-button px-4 py-2 rounded-md">
+            <button class="bg-indigo-300 text-gray-100 hover:bg-indigo-400 hover:text-white px-4 py-2 rounded-md" @click="sendMessage">
               <!-- <span class="material-symbols-outlined">send</span>  -->
               Envoyer
             </button>
@@ -91,6 +96,11 @@ export default {
   },
   data() {
     return {
+      emailContact:'',
+      nameContact:'',
+      messageContact:'',
+      errorMessage:'',
+      successMessage:'',
       networks,
       currentLocation: {},
       locationsVisibleOnMap: "",
@@ -110,6 +120,25 @@ export default {
         notSelected:
           "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABHElEQVR42uVVyw4BMRQdC98lsbPwG5YSH+BzWFtLZilh0oQgFh6J54IwBmGYtrfaBREdcTvDhpM0adrec3rb+7Csn8fRdrLg7VzBubhDzmHrudRuZ2KRs/miLd6AThfNaOTTGRFIsMm8bkSuXBeGoLVaGi0g39wLI4GTf1EjdE/+E1pAAGgEAenkb/tBo1vQFUDgBbSbny6al77uSQwB/6wJSNHoAo8xj30iaYMW4Lv9wfSTpc0eH6atXtE4TKWNUS4AY2hyddY4k/lwVEZncm9QilQuBGPwnp1B5GIXGi3P0eU0c7EqKrje5hU5d7fr2P2AEJIESkNqB1XJkvhI0/GrTuqZX619tLMF/VHlfnk5/0r7ZMvVWA3rr3AF6LIMZ7PmSlUAAAAASUVORK5CYII=",
       },
+    }
+  },
+  methods:{
+    clearInputs(){
+      this.emailContact='',
+      this.nameContact='',
+      this.messageContact='',
+      this.errorMessage=null
+    },
+    sendMessage(){
+      if(this.emailContact.trim() == '' || this.nameContact.trim()=='' || this.messageContact.trim() == ''){
+        this.errorMessage = "Veuillez remplir tous les champs !"
+        console.log("Veuillez remplir tous les champs !")
+        return;
+      }else{
+        this.successMessage = "Votre message a été envoyé avec succèa !"
+        console.log("Message sent !")
+        this.clearInputs()
+      }
     }
   }
 }

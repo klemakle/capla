@@ -30,7 +30,9 @@ export default {
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
-    css: [],
+    css: [
+        '~/assets/css/style.css'
+    ],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: [
@@ -47,27 +49,23 @@ export default {
         '@nuxt/image',
     ],
     image: {
-        dir: '@/assets/images'
+        dir: '~/assets/images'
     },
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
         [
             '@nuxtjs/dotenv',
-            'nuxt-gmaps',
             '@nuxtjs/axios',
+            'nuxt-gmaps',
             {
                 key: 'AIzaSyDRmCh8-3LoLwg9CrUx4O0JUnTvaPoxEdQ'
             }
         ]
     ],
 
-    // env: {
-    // baseURL: process.env.NODE_ENV === 'production' ? 'https://capla.herokuapp.com/' : 'http://localhost:3000/',
-    // },
-
     publicRuntimeConfig: {
-        password_capla: process.env.PASSWORD,
+        capla: process.env.PASSWORD,
         EMAIL: process.env.EMAIL,
         NODE_ENV: process.env.NODE_ENV,
         WEGLOT: process.env.WEGLOT

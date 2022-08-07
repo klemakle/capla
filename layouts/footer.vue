@@ -11,7 +11,7 @@
             <p class="text-gray-300">Notre newsletter</p>
             <p class="text-lg mt-2">Abonnez-vous à notre newsletter pour ne rien rater.</p>
             <div class=" mt-6 flex justify-start items-center w-max border-gray-400 border h-10 md:h-14 py-2 pl-2 rounded-3xl mr-2">
-              <input type="email" id="newsletter_input" v-model="souscription" class="border-transparent bg-gray-700 px-2 py-0 md:py-2 h-8 md:h-12 rounded-3xl text-gray-200 md:w-full" placeholder="Enter your mail">
+              <input type="email" id="newsletter_input" v-model="souscription" @keyup.enter="sendSouscription" class="border-transparent bg-gray-700 px-2 py-0 md:py-2 h-8 md:h-12 rounded-3xl text-gray-200 md:w-full" placeholder="Enter your mail">
               <button 
                 @click="sendSouscription"
                 name="souscription"
@@ -69,7 +69,7 @@
     </div>
 
     <div class="bg-gray-800 w-full flex justify-center items-center py-4">
-        <p class="text-gray-400">© Copyright <a href="https://klema.herokuapp.com/" class="hover:text-gray-400 text-gray-300" target="blank">@Aethelwulf</a>. ALL Rights Reserved</p>
+        <p class="text-gray-400">© Copyright <a href="https://klema.herokuapp.com/" class="hover:text-gray-400 text-gray-300" target="blank">@Aethelwulf</a>. Tout droit réservé.</p>
     </div>
   </div>
 </template>

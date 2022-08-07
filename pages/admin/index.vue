@@ -88,8 +88,8 @@ export default {
       this.messageError = null
     },
     async createSession() {
-      console.log(`${this.$config.password_capla}`)
-      if (this.password !== `${this.$config.password_capla}`) {
+      console.log(`${this.$config.capla}`)
+      if (this.password !== `${this.$config.capla}`) {
         this.messageError = 'Mot de passe incorrect';
         return;
       } else {
