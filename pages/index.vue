@@ -3,9 +3,6 @@
     <!-- presentation -->
     <div><Presentation/></div>
 
-    <p>Our Url is: {{ $config.WEGLOT}}</p>
-<!-- <div class="mx-10">{{response}}</div> -->
-
     <!-- partners -->
     <div class="hidden md:block md:w-full"><Partner/></div>
 
