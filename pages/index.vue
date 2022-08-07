@@ -3,7 +3,7 @@
     <!-- presentation -->
     <div><Presentation/></div>
 
-    <p>Our Url is: {{ $config.WEGLOT_KEY}}</p>
+    <p>Our Url is: {{ $config.WEGLOT}}</p>
 <!-- <div class="mx-10">{{response}}</div> -->
 
     <!-- partners -->
@@ -68,18 +68,6 @@ export default {
   },
   components:{VueperSlides, VueperSlide, Presentation,Services, Offre, Start,Certificat, Modalites,Temoignage, Partner},
   methods: {
-    // async callNuxtApi() {
-    //   const session ="kals"
-    //   const debut= "hier"
-    //   console.log("----- API call -----")
-    //   try {
-    //     const response = await axios.get('api/new-session', {session,debut})
-    //     console.log("-----Kalidou---- ",response.data)
-    //     this.response = response.data.message 
-    //   } catch (error) {
-    //     console.log(error)
-    //   }
-    // },
     async callNuxtApi() {
       // console.log("------------- KALIDOU -------------- ", this.$config.WEGLOT)
       try {
