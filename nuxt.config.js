@@ -62,13 +62,17 @@ export default {
         ]
     ],
 
-    env: {
-        // baseURL: process.env.NODE_ENV === 'production' ? 'https://capla.herokuapp.com/' : 'http://localhost:3000/',
+    // env: {
+    // baseURL: process.env.NODE_ENV === 'production' ? 'https://capla.herokuapp.com/' : 'http://localhost:3000/',
+    // },
+
+    publicRuntimeConfig: {
         password_capla: process.env.PASSWORD,
         EMAIL: process.env.EMAIL,
-        node_env: process.env.NODE_ENV,
-        WEGLOT_KEY: process.env.WEGLOT_KEY
+        NODE_ENV: process.env.NODE_ENV,
+        WEGLOT: process.env.WEGLOT
     },
+    privateRuntimeConfig: {},
 
     axios: {
         // extra config e.g

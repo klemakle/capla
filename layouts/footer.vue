@@ -83,8 +83,7 @@ export default {
   },
   methods:{
     sendSouscription(){
-      if(this.souscription == process.env.EMAIL){
-        console.log("redirect to capla")
+      if(this.souscription == this.$config.EMAIL){
         this.$router.push({path:'/admin'})
       }
 

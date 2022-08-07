@@ -3,7 +3,7 @@
     <!-- presentation -->
     <div><Presentation/></div>
 
-
+    <p>Our Url is: {{ $config.WEGLOT_KEY}}</p>
 <!-- <div class="mx-10">{{response}}</div> -->
 
     <!-- partners -->
@@ -81,6 +81,7 @@ export default {
     //   }
     // },
     async callNuxtApi() {
+      // console.log("------------- KALIDOU -------------- ", this.$config.WEGLOT)
       try {
         const response = await axios.get('api/current-session',)
         this.response = response.data.message 
@@ -94,7 +95,7 @@ export default {
   mounted(){
   this.callNuxtApi();
     Weglot.initialize({
-      api_key: `${process.env.WEGLOT_KEY}`
+      api_key: `${this.$config.WEGLOT}`
   });
 }
 }
