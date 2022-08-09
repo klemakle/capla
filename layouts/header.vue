@@ -3,10 +3,10 @@
     
 <!-- announcement -->
 <div id="capla-online" v-if="caplaOnline" class="relative flex items-center justify-center px-4 py-3 text-white bg-indigo-500 pr-14">
-  <p class="text-sm font-medium text-left sm:text-center">
+  <p class="text-xs md:text-sm lg:text-base font-medium text-left sm:text-center">
     Découvrez notre plateforme de cours en ligne 
 
-    <a class="underline" href="http://capla-english-online.com/" target="blank"> Capla-online &rarr; </a>
+    <a class="underline text-xs" href="http://capla-english-online.com/" target="blank"> Capla-online &rarr; </a>
   </p>
 
   <button
@@ -79,17 +79,17 @@
             <div class="mb-2 self-end top-1 -mt-2" tabindex="0"> <span class="text-indigo-700 material-symbols-outlined" @click="closeMobileMenu">close</span> </div>
             <div class="mb-4 mt-2"> 
               <nuxt-link
-                to="about"
-                class="menu-mobile-link block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                aria-current="page"
-                >A propos</nuxt-link>
-            </div>
-            <!-- <div class="my-4 "> 
-               <nuxt-link
                 to="/"
                 class="menu-mobile-link block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >Activités</nuxt-link>
-            </div> -->
+                aria-current="page"
+                >Accueil</nuxt-link>
+            </div>
+            <div class="my-4 "> 
+               <nuxt-link
+                to="about"
+                class="menu-mobile-link block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >A propos</nuxt-link>
+            </div>
             <div class="my-4 "> 
                 <nuxt-link
                 to="services"
