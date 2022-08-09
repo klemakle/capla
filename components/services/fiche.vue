@@ -1,9 +1,9 @@
 <template>
      <div class="md:mx-2">
-        <div class="mx-auto flex justify-center items-center mb-2 text-indigo-400 font-bold">Tableau détaillé</div>
+        <div class="mx-auto flex justify-center items-center mb-2 text-indigo-400 font-nexa-bold">Tableau détaillé</div>
       <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
           <table class="w-full text-sm text-left text-gray-600 dark:text-gray-400 text-left">
-              <thead class="text-xs text-white uppercase bg-indigo-400 dark:text-gray-400">
+              <thead class="font-nexa-bold text-xs text-white uppercase bg-indigo-400 dark:text-gray-400">
                   <tr>
                       <th scope="col" class="py-3 px-6 text-center w-1/5">Offres</th>
                       <th scope="col" class="py-3 px-6 text-center">Objectifs</th>
@@ -11,9 +11,9 @@
                       <th scope="col" class="py-3 px-6 text-center">Public ciblé</th>
                   </tr>
               </thead>
-              <tbody>
+              <tbody class="font-nexa-light">
                   <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700" >
-                      <th scope="row" class=" py-4 px-4 w-1/5 font-medium text-gray-800  dark:text-white">Anglais de la conversation</th>
+                      <th scope="row" class=" py-4 px-4 w-1/5 font-medium text-gray-500 font-nexa-bold  dark:text-white">Anglais de la conversation</th>
                       <td class="py-4 px-6 text-xs w-2/5">
                           Renforcer ou améliorer le niveau communicationnel de l'auditeur en situation d'entreprise ou dans la vie sociale.
                       </td>
@@ -28,7 +28,7 @@
                       </td>
                   </tr>
                   <tr class="bg-gray-50 border-b dark:bg-gray-900 dark:border-gray-700" >
-                      <th scope="row" class=" py-4 px-4 w-1/5 font-medium text-gray-800  dark:text-white">Business English ou anglais commercial</th>
+                      <th scope="row" class=" py-4 px-4 w-1/5 font-medium text-gray-500 font-nexa-bold  dark:text-white">Business English ou anglais commercial</th>
                       <td class="py-4 px-6 text-xs">
                           Comprendre, interpréter, savoir communiquer et interagir avec les clients en anglais commercial en entreprise.
                       </td>
@@ -44,7 +44,7 @@
                       </td>
                   </tr>
                    <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700" >
-                      <th scope="row" class=" py-4 px-4 w-1/5 font-medium text-gray-800  dark:text-white">Anglais bancaire et financier</th>
+                      <th scope="row" class=" py-4 px-4 w-1/5 font-medium text-gray-500 font-nexa-bold  dark:text-white">Anglais bancaire et financier</th>
                       <td class="py-4 px-6 text-xs">
                           Comprendre, interpréter, savoir-faire une présentation de la compatibilité bancaire en anglais.
                       </td>
@@ -60,7 +60,7 @@
                       </td>
                   </tr>
                   <tr class="bg-gray-50 border-b dark:bg-gray-900 dark:border-gray-700" >
-                      <th scope="row" class=" py-4 px-4 w-1/5 font-medium text-gray-800  dark:text-white">Anglais appliquée à la gestion de projet</th>
+                      <th scope="row" class=" py-4 px-4 w-1/5 font-medium text-gray-500 font-nexa-bold  dark:text-white">Anglais appliquée à la gestion de projet</th>
                       <td class="py-4 px-6 text-xs">
                           Comprendre le processus d'élaboration, de management et suivi-évaluation de projet, savoir communiquer, interpréter les données en anglais.
                       </td>
@@ -76,7 +76,7 @@
                       </td>
                   </tr>
                   <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700" >
-                      <th scope="row" class=" py-4 px-4 w-1/5 font-medium text-gray-800  dark:text-white">Techniques de rédaction de documents administratifs en anglais</th>
+                      <th scope="row" class=" py-4 px-4 w-1/5 font-medium text-gray-500 font-nexa-bold  dark:text-white">Techniques de rédaction de documents administratifs en anglais</th>
                       <td class="py-4 px-6 text-xs">
                           Initier les participants à différentes techniques de rédaction des correspondances administratives en anglais.
                       </td>
@@ -94,7 +94,7 @@
                       </td>
                   </tr>
                   <tr class="bg-gray-50 border-b dark:bg-gray-900 dark:border-gray-700" >
-                      <th scope="row" class=" py-4 px-4 w-1/5 font-medium text-gray-800  dark:text-white">Anglais médical</th>
+                      <th scope="row" class=" py-4 px-4 w-1/5 font-medium text-gray-500 font-nexa-bold  dark:text-white">Anglais médical</th>
                       <td class="py-4 px-6 text-xs">
                         Acquérir les connaissances en anglais médical. Travailler et communiquer en anglais dans le milieu de la santé et pour la prise en charge des besoins des patients.
                       </td>

@@ -2,7 +2,7 @@
     <div>
         <div class="flex flex-col-reverse lg:flex-row py-4 px-4 justify-center lg:justify-between items-center my-10 mx-auto md:mx-12  mb-10 mt-24">
             <div id="certificat_text w-full lg:w-1/3 text-gray-200 mx-2">
-                <p class="text-gray-400 md:text-gray-500 self-center text-3xl lg:text-5xl tracking-wide my-4 mx-2">
+                <p class="font-nexa-bold text-gray-400 md:text-gray-500 self-center text-3xl lg:text-5xl tracking-wide my-4 mx-2">
                     Ce que vous offre la formation avec <span class="text-indigo-400">Capla</span>
                 </p>
                 <div class="text-gray-400 text-xl lg:text-2xl my-4 flex items-center"><span class="material-symbols-outlined text-green-500 mx-2">task_alt</span> Bien communiquer en anglais</div>

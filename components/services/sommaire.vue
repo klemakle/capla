@@ -3,16 +3,16 @@
         <section class="text-gray-600 bg-gray-50">
   <div class="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div class="max-w-xl">
-      <h2 class="text-3xl font-bold sm:text-4xl">Trouvez votre demande </h2>
+      <h2 class="text-3xl font-bold sm:text-4xl font-nexa-bold">Trouvez votre demande </h2>
 
-      <p class="mt-4 text-gray-400">
+      <p class="mt-4 text-gray-400 font-nexa-light">
         Ce centre avec ses experts bilingues développe des cours intensifs avec un laboratoire linguistique s’appuyant sur des technologies modernes tout en se focalisant sur la pratique des métiers.
       </p>
       
     </div>
 
     <div
-      class="grid grid-cols-1 gap-8 mt-8 md:gap-12 md:mt-16 md:grid-cols-2 lg:grid-cols-3"
+      class="font-montserrat grid grid-cols-1 gap-8 mt-8 md:gap-12 md:mt-16 md:grid-cols-2 lg:grid-cols-3"
     >
       <div class="flex items-start">
         <span class="flex-shrink-0 p-4 bg-indigo-100 rounded-lg">

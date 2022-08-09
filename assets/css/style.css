@@ -1,3 +1,31 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("@/assets/fonts/montserrat.regular.ttf");
+}
+
+@font-face {
+    font-family: Nexa-Light;
+    src: url("@/assets/fonts/Nexa-Light.otf");
+}
+
+@font-face {
+    font-family: Nexa-Bold;
+    src: url("@/assets/fonts/Nexa-Bold.otf");
+}
+
+.font-montserrat {
+    font-family: Montserrat;
+}
+
+.font-nexa-light {
+    font-family: Nexa-Light;
+}
+
+.font-nexa-bold {
+    font-family: Nexa-Bold;
+}
+
+
 /* .wg-default,
 .wg-default .country-selector {
     top: 0 !important;

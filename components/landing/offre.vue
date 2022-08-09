@@ -1,10 +1,10 @@
 <template>
     <div>
         <div class="flex flex-col justify-between items-center mt-12 mb-18 mx-4 px-4">
-      <div class="text-indigo-400 text-5xl mb-4">
+      <div class="text-indigo-400 text-5xl mb-4 font-montserrat">
         Nos offres
       </div>
-      <div class="text-gray-400 md:mx-4 leading-6 md:leading-7 text-base md:text-lg text-justify">
+      <div class="font-nexa-light text-gray-400 md:mx-4 leading-6 md:leading-7 text-base md:text-lg text-justify">
         <p class="tracking-wide mt-2">
           Le CAPLA organise <span class="text-gray-600">trois (3) sessions</span> de formation dans l'année académique en plus d'une session d'été. 
           En dehors des cours précités, le centre offre la possibilité d'intégrer la formation en fonction des besoins personnels des candidats avec des <span class="text-gray-600">horaires adaptés</span> à leur emploi du temps.

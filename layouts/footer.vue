@@ -4,13 +4,13 @@
         <div id="logoCapla" class="flex flex-col justify-between mb-4 lg:mb-2  w-full lg:w-1/3">
           <div class="logo mb-2"> 
           <nuxt-link to="/">
-            <span class="self-start text-xl font-semibold whitespace-nowrap text-gray-200 dark:text-white">Capla</span>
+            <span class="self-start text-xl font-semibold whitespace-nowrap text-gray-200 dark:text-white font-nexa-bold">Capla</span>
           </nuxt-link>
           </div>
           <div class="text-gray-500 mt-2">
-            <p class="text-gray-300">Notre newsletter</p>
-            <p class="text-lg mt-2">Abonnez-vous à notre newsletter pour ne rien rater.</p>
-            <div class=" mt-6 flex justify-start items-center w-max border-gray-400 border h-10 md:h-14 py-2 pl-2 rounded-3xl mr-2">
+            <p class="text-gray-300 font-nexa-bold">Notre newsletter</p>
+            <p class="text-lg mt-2 font-nexa-light">Abonnez-vous à notre newsletter pour ne rien rater.</p>
+            <div class="font-nexa-bold mt-6 flex justify-start items-center w-max border-gray-400 border h-10 md:h-14 py-2 pl-2 rounded-3xl mr-2">
               <input type="email" id="newsletter_input" v-model="souscription" @keyup.enter="sendSouscription" class="border-transparent bg-gray-700 px-2 py-0 md:py-2 h-8 md:h-12 rounded-3xl text-gray-200 md:w-full" placeholder="Enter your mail">
               <button 
                 @click="sendSouscription"
@@ -25,7 +25,7 @@
           </div>
         </div>
 
-        <div id="location" class=" flex flex-col w-full text-base lg:text-base lg:w-1/3 my-10 lg:my-0 lg:mb-2">
+        <div id="location" class="font-nexa-light flex flex-col w-full text-base lg:text-base lg:w-1/3 my-10 lg:my-0 lg:mb-2">
           <div class="flex justify-start mb-4">
             <div> <span class="material-symbols-outlined">pin_drop</span></div>
             <div class="ml-2"> 163 10ème Riaom Thiès Thiès, 21000 </div>
@@ -47,7 +47,7 @@
         </div>
 
         <div class="about w-full lg:w-1/3 mb-12 lg:mb-2">
-          <div class="leading-7 text-justify mb-2 text-base lg:text-base">
+          <div class="leading-7 text-justify mb-2 text-base lg:text-base font-nexa-light">
             <p>Ce centre avec ses experts bilingues développe des cours intensifs avec un laboratoire linguistique s’appuyant sur des technologies modernes tout en se focalisant sur la pratique des métiers.</p>
             <p>Suivez nous sur nos réseaux sociaux pour ne rater aucune information.</p>
           </div>
@@ -68,7 +68,7 @@
         </div>
     </div>
 
-    <div class="bg-gray-800 w-full flex justify-center items-center py-4">
+    <div class="font-nexa-bold bg-gray-800 w-full flex justify-center items-center py-4">
         <p class="text-gray-400">© Copyright <a href="https://klema.herokuapp.com/" class="hover:text-gray-400 text-gray-300" target="blank">@Aethelwulf</a>. Tout droit réservé.</p>
     </div>
   </div>

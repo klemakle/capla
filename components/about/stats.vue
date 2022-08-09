@@ -3,15 +3,15 @@
         <section class="bg-white">
   <div class="max-w-screen-xl px-4 py-12 mx-auto md:py-16 sm:px-6 lg:px-8">
     <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-indigo-500 sm:text-4xl">Capla en chiffre</h2>
+      <h2 class="text-3xl font-bold text-indigo-500 sm:text-4xl font-nexa-bold">Capla en chiffre</h2>
 
-      <p class="mt-4 text-gray-400 sm:text-xl">
+      <p class="mt-4 text-gray-400 sm:text-xl font-nexa-light">
         En enseignant l'anglais, nous voulons que les gens soient mis au défi dans leur réflexion et 
         nous encourageons les plus jeunes comme les plus âgés à saisir les opportunités que peut leur offrir la maitrise de l'anglais.
       </p>
     </div>
 
-    <div class="mt-8 sm:mt-12">
+    <div class="mt-8 sm:mt-12 font-nexa-bold">
       <dl class="grid grid-cols-1 gap-4 sm:grid-cols-3">
         <div
           class="flex flex-col px-4 py-8 text-center border border-gray-100 rounded-lg"

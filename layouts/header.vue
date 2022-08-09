@@ -4,7 +4,7 @@
       class="bg-white border-gray-200 px-6 sm:px-4 py-0 rounded dark:bg-gray-800"
     >
       <div
-        class="container flex flex-wrap justify-between items-center mx-auto"
+        class="container font-montserrat flex flex-wrap justify-between items-center mx-auto"
       >
         <nuxt-link to="/" class="flex items-center">
           <img src="@/assets/images/logo.jpg" class="py-1 md:mx-4  h-12 sm:h-18 lg:h-24" alt="Logo Capla">

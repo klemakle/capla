@@ -41,11 +41,18 @@
 
     <div id="contactForm" class="mx-10 border-2 p-4 -mx-2 ">
       <div id="contactUs" class=" flex flex-col justify-center items-center w-full">
-        <div class="w-auto text-gray-600 text-3xl md:text-6xl my-4"> Contactez nous</div>
+        <div class="font-nexa-light w-auto text-gray-600 text-3xl md:text-6xl my-4 font-nexa-bold"> Contactez nous</div>
 
          <p
+          v-if="errorMessage"
           class="px-2 max-w-md mx-auto mt-4 text-center text-red-400 border-2 border-red-100  rounded-md bg-red-50">
-          Erreur message
+          {{errorMessage}}
+        </p>
+
+        <p
+          v-if="successMessage"
+          class="px-2 max-w-md mx-auto mt-4 text-center text-green-500 border-2 border-green-400  rounded-md bg-green-100">
+          {{successMessage}}
         </p>
         
         <div class="input-text w-full md:w-1/2 my-10">
@@ -60,7 +67,7 @@
           </div>
 
           <div class="justify-self-end text-right mx-2 my-auto">
-            <button class="bg-indigo-300 text-gray-100 hover:bg-indigo-400 hover:text-white px-4 py-2 rounded-md" @click="sendMessage">
+            <button class="bg-gray-50 text-indigo-300 hover:bg-indigo-400 hover:text-white px-4 py-2 rounded-md" @click="sendMessage">
               <!-- <span class="material-symbols-outlined">send</span>  -->
               Envoyer
             </button>
