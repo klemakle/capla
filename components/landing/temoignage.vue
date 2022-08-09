@@ -13,11 +13,11 @@
                             <!-- <img class="w-auto h-auto rounded-full shadow-lg" :src="temoin.image" alt="temoin"/> -->
                         </div>
                         <div class="flex flex-col items-center w-auto mx-6">
-                            <p class="text-gray-600 text-sm lg:text-base xl:text-lg text-center font-nexa-bold">{{temoin.fullname}}</p>
+                            <p class="text-gray-500 text-sm lg:text-base xl:text-lg text-center font-nexa-bold">{{temoin.fullname}}</p>
                             <p class="text-gray-400 text-center text-sm lg:text-base font-summer"> {{temoin.fonction}}</p>
                         </div>
                     </div>
-                    <div class="mt-4 text-gray-500 my-2 w-full text-justify text-sm md:text-xs lg:text-base xl:text-xl font-summer italic">"{{temoin.text}}"</div>
+                    <div class="mt-4 text-gray-400 my-2 w-full text-justify text-sm md:text-xs lg:text-base xl:text-xl font-summer italic">"{{temoin.text}}"</div>
                 </div>
             </div>
         </div>
