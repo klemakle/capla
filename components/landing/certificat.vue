@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="flex flex-col-reverse lg:flex-row py-4 px-4 justify-center lg:justify-between items-center my-10 mx-auto md:mx-12  mb-10 mt-24">
+        <div class="flex flex-col-reverse lg:flex-row py-4 px-4 justify-center lg:justify-between items-center mt-20 md:mt-40 mx-auto md:mx-12 ">
             <div id="certificat_text w-full lg:w-1/3 text-gray-200 mx-2">
                 <p class="font-nexa-bold text-gray-400 md:text-gray-500 self-center text-3xl lg:text-5xl tracking-wide my-4 mx-2">
                     Ce que vous offre la formation avec <span class="text-indigo-400">Capla</span>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="flex flex-col justify-between items-center mt-12 mb-18 mx-4 px-4">
+        <div class="flex flex-col justify-between items-center mt-20 md:mt-40 mx-4 px-4">
       <div class="text-indigo-400 text-5xl mb-4 font-montserrat">
         Nos offres
       </div>

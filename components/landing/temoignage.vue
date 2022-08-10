@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="flex flex-col justify-between my-20 mx-auto px-10 py-5">
+        <div class="flex flex-col justify-between mt-20 md:mt-40 mx-auto px-10 py-5">
             <div class="text-3xl md:text-5xl w-full md:w-1/2 text-gray-500 tracking-wider font-medium font-nexa-bold">
                 <p>Qu'est ce qu'on dit à propos nous ?</p>
             </div>

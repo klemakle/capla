@@ -1,5 +1,5 @@
 <template>
- <div class="flex flex-col py-4 mx-4 px-4 my-14 justify-between items-center">
+ <div class="flex flex-col py-4 mx-4 px-4 mt-20 md:mt-40 justify-between items-center">
        <div class="font-montserrat text-indigo-400 text-5xl mb-4">
         Modalités
       </div>

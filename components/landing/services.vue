@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="flex flex-col xl:flex-row bg-gray-50 mx-auto mb-12 mt-8 lg:my-12 md:my-20 py-10 px-10 w-full ">
+        <div class="flex flex-col xl:flex-row bg-gray-50 mx-auto mt-20 md:mt-40 py-10 px-10 w-full ">
             <div class="w-full md:w-2/3 lg:w-1/2  flex flex-col items-center md:items-start  px-4 py-2 md:px-2 text-gray-600">
               <p class=" font-montserrat text-xl md:text-xl lg:text-3xl">Ce que nous faisons au <span class="text-indigo-500 ">Capla</span></p>
               <div class="hidden  mt-2 md:mt-4  lg:flex justify-center md:justify-start mx-auto md:mr-0 items-center w-max border-gray-300 py-2 pl-2 md:-ml-2">
