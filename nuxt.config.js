@@ -18,7 +18,6 @@ export default {
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
             { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0' },
-            // { rel: 'stylesheet', href: 'https://unpkg.com/vueperslides/dist/vueperslides.css' },
         ],
         script: [
             { src: 'https://cdn.lordicon.com/xdjxvujz.js' },
@@ -46,7 +45,6 @@ export default {
     buildModules: [
         // https://go.nuxtjs.dev/tailwindcss
         '@nuxtjs/tailwindcss',
-        '@nuxt/image',
     ],
     image: {
         dir: '~/assets/images'
