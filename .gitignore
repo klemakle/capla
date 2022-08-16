@@ -92,3 +92,9 @@ sw.*
 *.swp
 
 package-lock.json
+
+
+
+server.csr
+
+server.key
