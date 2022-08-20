@@ -27,9 +27,9 @@ export default {
         title: 'Services',
   },
   mounted(){
-      Weglot.initialize({
-        api_key: `${process.env.WEGLOT_KEY}`
-    });
+    //   Weglot.initialize({
+    //     api_key: `${process.env.WEGLOT_KEY}`
+    // });
   }
 }
 </script>

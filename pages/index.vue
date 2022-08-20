@@ -78,10 +78,10 @@ export default {
     },
   },
   mounted(){
-  this.callNuxtApi();
-    Weglot.initialize({
-      api_key: `${this.$config.WEGLOT}`
-  });
+  // this.callNuxtApi();
+  //   Weglot.initialize({
+  //     api_key: `${this.$config.WEGLOT}`
+  // });
 }
 }
 </script>

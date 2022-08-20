@@ -89,9 +89,9 @@ export default {
         }
     },
     mounted(){
-        Weglot.initialize({
-          api_key: `${process.env.WEGLOT_KEY}`
-    });
+    //     Weglot.initialize({
+    //       api_key: `${process.env.WEGLOT_KEY}`
+    // });
 }
 
 }
