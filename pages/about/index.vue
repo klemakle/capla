@@ -45,6 +45,11 @@
         <!-- <div data-aos="zoom-out-down" data-aos-delay="500" data-aos-duration="1000"> -->
         <div ><Stats/></div>
         <!-- </div> -->
+
+        <!-- capla staff -->
+        <div>
+            <Staff/>
+        </div>
     </div>
 </template>
 
@@ -56,7 +61,8 @@
 // }); 
  
 import {photos, breakpoints} from '../../assets/js/about.js';
-import Stats from '../../components/about/stats.vue'
+import Stats from '../../components/about/stats.vue';
+import Staff from '../../components/about/staff.vue'
 import { VueperSlides, VueperSlide } from 'vueperslides';
 import 'vueperslides/dist/vueperslides.css'
 
@@ -64,7 +70,7 @@ import 'vueperslides/dist/vueperslides.css'
 
 export default {
     layout:'navbar',
-    components:{VueperSlides, VueperSlide, Stats},
+    components:{VueperSlides, VueperSlide, Stats, Staff},
     head:{
         title: 'A propos',
         script:[
