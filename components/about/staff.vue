@@ -3,15 +3,14 @@
     <section class="bg-white">
       <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 sm:py-24">
         <div class="max-w-xl mx-auto text-center">
-          <h2 class="text-4xl text-gray-500 font-bold tracking-tight sm:text-5xl">
-            Read trusted reviews from our customers
+          <h2 class="text-4xl text-gray-500 font-bold tracking-tight sm:text-5xl font-montserrat">
+            Qui sommes nous ?
           </h2>
 
-          <p class="max-w-lg mx-auto mt-4 text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            praesentium natus sapiente commodi. Aliquid sunt tempore iste
-            repellendus explicabo dignissimos placeat, autem harum dolore
-            reprehenderit quis! Quo totam dignissimos earum.
+          <p class="max-w-lg mx-auto mt-4 text-gray-400 text-lg font-nexa-light">
+            Ce centre avec ses experts bilingues développe des cours intensifs avec un laboratoire linguistique s’appuyant sur des technologies modernes tout en se focalisant sur la pratique des métiers.
+
+Suivez nous sur nos réseaux sociaux pour ne rater aucune information.
           </p>
         </div>
 
@@ -21,9 +20,9 @@
 
           <div>
             <img
-              src="../../assets/images/about/staff/wim.jpeg"
+              src="../../assets/images/about/staff/wim.png"
               alt=""
-              class="object-cover w-full h-60 mx-auto rounded shadow-xl"
+              class="object-cover w-40 h-40 lg:w-full lg:h-60 mx-auto rounded shadow-xl"
             />
 
             <blockquote
@@ -63,9 +62,9 @@
 
           <div>
             <img
-              src="../../assets/images/about/staff/pam.png"
+              src="../../assets/images/about/staff/pam.jpg"
               alt=""
-              class="object-cover w-full h-60 mx-auto rounded shadow-xl"
+              class="object-cover w-40 h-40 lg:w-full lg:h-60 mx-auto rounded shadow-xl"
             />
 
             <blockquote
