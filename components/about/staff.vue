@@ -22,11 +22,11 @@ Suivez nous sur nos réseaux sociaux pour ne rater aucune information.
             <img
               src="../../assets/images/about/staff/wim.png"
               alt=""
-              class="object-cover w-40 h-40 lg:w-full lg:h-60 mx-auto rounded shadow-xl"
+              class="object-cover w-40 h-40 lg:w-full lg:h-60 mx-auto rounded shadow"
             />
 
             <blockquote
-              class="flex flex-col justify-between p-12 -mt-6 text-center rounded-lg shadow-xl"
+              class="flex flex-col justify-between p-12 -mt-6 text-center rounded-lg shadow-md"
             >
               <p class="text-lg font-bold text-gray-500">Wim Lancsweert</p>
               <p class="mt-1 text-sm font-medium text-indigo-500 font-nexa-bold">
@@ -43,11 +43,11 @@ Suivez nous sur nos réseaux sociaux pour ne rater aucune information.
             <img
               src="../../assets/images/about/staff/daff.jpg"
               alt=""
-              class="object-cover w-40 h-40 lg:w-full lg:h-60 mx-auto rounded shadow-xl"
+              class="object-cover w-40 h-40 lg:w-full lg:h-60 mx-auto rounded shadow"
             />
 
             <blockquote
-              class="flex flex-col justify-between p-12 -mt-6 text-center rounded-lg shadow-xl"
+              class="flex flex-col justify-between p-12 -mt-6 text-center rounded shadow-md"
             >
               <p class="text-lg font-bold text-gray-500">Aminata Daff</p>
               <p class="mt-1 text-sm font-medium text-indigo-500 font-nexa-bold">
@@ -64,11 +64,11 @@ Suivez nous sur nos réseaux sociaux pour ne rater aucune information.
             <img
               src="../../assets/images/about/staff/pam.jpg"
               alt=""
-              class="object-cover w-40 h-40 lg:w-full lg:h-60 mx-auto rounded shadow-xl"
+              class="object-cover w-40 h-40 lg:w-full lg:h-60 mx-auto md:rounded shadow"
             />
 
             <blockquote
-              class="flex flex-col justify-between p-12 -mt-6 text-center rounded-lg shadow-xl"
+              class="flex flex-col justify-between p-12 -mt-6 text-center rounded shadow-md"
             >
               <p class="text-lg font-bold text-gray-500">Souleymane PAM</p>
               <p class="mt-1 text-sm font-medium text-indigo-500 font-nexa-bold">

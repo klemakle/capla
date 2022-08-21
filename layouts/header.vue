@@ -4,9 +4,9 @@
 <!-- announcement -->
 <div id="capla-online" v-if="caplaOnline" class="relative flex items-center justify-center px-4 py-3 text-white bg-indigo-500 pr-14">
   <p class="text-xs md:text-sm lg:text-base font-medium text-left sm:text-center">
-    Découvrez notre plateforme de cours en ligne 
+    Découvrez notre plateforme <span class="hidden md:inline-block">de cours en ligne</span>
 
-    <a class="underline text-xs" href="http://capla-english-online.com/" target="blank"> Capla-online &rarr; </a>
+    <a class="underline text-xs md:text-sm " href="http://capla-english-online.com/" target="blank"> Capla-online &rarr; </a>
   </p>
 
   <button
