@@ -3,7 +3,7 @@
         <section class="text-gray-600 bg-gray-50">
   <div class="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div class="max-w-xl">
-      <h2 class="text-3xl font-bold sm:text-4xl font-nexa-bold">Trouvez votre demande </h2>
+      <h2 class="text-3xl font-bold sm:text-4xl font-nexa-bold">Trouvez ce que vous recherchez </h2>
 
       <p class="mt-4 text-gray-400 font-nexa-light">
         Ce centre avec ses experts bilingues développe des cours intensifs avec un laboratoire linguistique s’appuyant sur des technologies modernes tout en se focalisant sur la pratique des métiers.

@@ -7,7 +7,7 @@
                 </p>
                 <div class="text-gray-400 text-xl lg:text-2xl my-4 flex items-center"><span class="material-symbols-outlined text-green-500 mx-2">task_alt</span> Bien communiquer en anglais</div>
                 <div class="text-gray-400 text-xl lg:text-2xl my-4 flex items-center"><span class="material-symbols-outlined text-green-500 mx-2">task_alt</span> Capacité à parler en public</div>
-                <div class="text-gray-400 text-xl lg:text-2xl my-4 flex items-center justify-start"><span class="material-symbols-outlined text-green-500 mx-2">task_alt</span> Certificat de maitrise de langue anglaise <img src="../../assets/images/social/certificate.png" class="w-10 h-10 ml-2" alt="certificat"></div>
+                <div class="text-gray-400 text-xl lg:text-2xl my-4 flex items-center justify-start"><span class="material-symbols-outlined text-green-500 mx-2">task_alt</span> Certificat de maitrise de la langue anglaise <img src="../../assets/images/social/certificate.png" class="w-10 h-10 ml-2" alt="certificat"></div>
             </div>
 
             <div class=" ml-4 relative mb-8 md:mb-0 mx-2 w-full lg:w-2/3">
