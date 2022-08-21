@@ -39,6 +39,12 @@
     </GMap>
     </div> -->
 
+
+    <!-- google map capla -->
+    <div class="-mx-2">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.6081744441904!2d-16.93805388591338!3d14.791086576347222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1bf22efeb7361%3A0xe9143fb179f01a23!2sCentre%20d%E2%80%99Apprentissage%20Pratique%20de%20la%20Langue%20Anglaise%20(CAPLA)!5e0!3m2!1sfr!2ssn!4v1661100596983!5m2!1sfr!2ssn" width="100%" height="500" style="border:0;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
     <div id="contactForm" class="mx-10 border-2 p-4 -mx-2 ">
       <div id="contactUs" class=" flex flex-col justify-center items-center w-full">
         <div class="font-nexa-light w-auto text-gray-600 text-3xl md:text-6xl my-4 font-nexa-bold"> Contactez nous</div>
@@ -139,11 +145,9 @@ export default {
     sendMessage(){
       if(this.emailContact.trim() == '' || this.nameContact.trim()=='' || this.messageContact.trim() == ''){
         this.errorMessage = "Veuillez remplir tous les champs !"
-        console.log("Veuillez remplir tous les champs !")
         return;
       }else{
-        this.successMessage = "Votre message a été envoyé avec succèa !"
-        console.log("Message sent !")
+        this.successMessage = "Votre message a été envoyé avec succès !"
         this.clearInputs()
       }
     }
