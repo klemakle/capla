@@ -4,7 +4,7 @@
             <div class="w-full md:w-2/3 lg:w-1/2  flex flex-col items-center md:items-start  px-4 py-2 md:px-2 text-gray-600">
               <p class=" font-montserrat text-xl md:text-xl lg:text-3xl">Ce que nous faisons au <span class="text-indigo-500 ">Capla</span></p>
               <div class="hidden  mt-2 md:mt-4  lg:flex justify-center md:justify-start mx-auto md:mr-0 items-center w-max border-gray-300 py-2 pl-2 md:-ml-2">
-                    <nuxt-link class="voir-plus px-3 py-2 md:px-6 md:py-4 get-started flex hover:bg-indigo-500 bg-indigo-400 text-white rounded" to="services"><span class="mr-1">Voir plus</span> <span class="arrow-plus material-symbols-outlined">trending_flat</span> </nuxt-link>
+                    <nuxt-link class="voir-plus px-3 py-2 md:px-6 md:py-4 get-started flex hover:bg-indigo-500 bg-indigo-400 text-white rounded" to="services"><span class="mr-1">Voir plus</span> <span class="arrow-plus"><svg width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m23.068 11.993l-4.25-4.236l-1.412 1.417l1.835 1.83L.932 11v2l18.305.002l-1.821 1.828l1.416 1.412l4.236-4.25Z"/></svg></span> </nuxt-link>
             </div>
             </div>
             <div class="flex flex-col md:flex-row flex-nowrap">
@@ -20,7 +20,7 @@
             </div>
 
             <div class="flex lg:hidden items-center mx-auto mt-4">
-                <nuxt-link class="voir-plus px-3 py-2 lg:px-6 lg:py-4 get-started flex hover:bg-indigo-500 bg-indigo-400 text-white rounded" to="services"><span class="mr-1">Voir plus</span> <span class="arrow-plus material-symbols-outlined">trending_flat</span> </nuxt-link>
+                <nuxt-link class="voir-plus px-3 py-2 lg:px-6 lg:py-4 get-started flex hover:bg-indigo-500 bg-indigo-400 text-white rounded" to="services"><span class="mr-1">Voir plus</span> <span class="arrow-plus"><svg width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m23.068 11.993l-4.25-4.236l-1.412 1.417l1.835 1.83L.932 11v2l18.305.002l-1.821 1.828l1.416 1.412l4.236-4.25Z"/></svg></span> </nuxt-link>
             </div>
         </div>
     </div>
@@ -44,6 +44,7 @@ export default {
     opacity: .8;
     margin-left: .5rem ;
     transition: .25s all;
+    margin-top:-.2rem;
 }
 
 .voir-plus:hover > .arrow-plus{
