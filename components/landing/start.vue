@@ -6,11 +6,11 @@
                     Prochaine rentrée
                 </div>
                 <div class="text-indigo-50 my-2 font-bold text-2xl md:text-5xl font-russo ">
-                    {{nomSession || "Session Vacance"}}
+                    {{nomSession || "Promo 12"}}
                 </div>
 
                 <div class="text-indigo-50 my-2 font-bold text-2xl md:text-5xl font-russo ">
-                    {{debut || "04 Août 2022 "}}
+                    {{debut || "03 Novembre 2022 "}}
                 </div>
             </div>
         </div>

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[19],{501:function(t,n,e){"use strict";e.r(n);var l={layout:"navbar",head:{title:"Activity"}},c=e(11),component=Object(c.a)(l,(function(){var t=this,n=t.$createElement;return(t._self._c||n)("div",[t._v("\n  Activity\n")])}),[],!1,null,null,null);n.default=component.exports}}]);
