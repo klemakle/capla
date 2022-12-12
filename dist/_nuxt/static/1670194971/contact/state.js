@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1670194971",layout:"navbar",error:a,serverRendered:true,routePath:"\u002Fcontact",config:{capla:"english",EMAIL:"capla@capla.com",NODE_ENV:"dev",WEGLOT:"wg_d8008ce8dd234ee84baf99a4f76f9b474",_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a}}}}(null));
