@@ -9,8 +9,8 @@
                     {{nomSession}}
                 </div>
 
-                <div class="text-indigo-50 my-2 font-bold text-2xl md:text-5xl font-russo ">
-                    {{debut || "02 Février 2023 "}}
+                <div v-if="debut" class="text-indigo-50 my-2 font-bold text-2xl md:text-5xl font-russo ">
+                    {{debut}}
                 </div>
             </div>
         </div>
