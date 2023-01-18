@@ -5,12 +5,12 @@
                 <div class="text-lg md:text-xl text-indigo-200 font-thin items-center mb-8 font-russo">
                     Prochaine rentrée
                 </div>
-                <div class="text-indigo-50 my-2 font-bold text-2xl md:text-5xl font-russo ">
-                    {{nomSession || "Promo 12"}}
+                <div v-if="nomSession" class="text-indigo-50 my-2 font-bold text-2xl md:text-5xl font-russo ">
+                    {{nomSession}}
                 </div>
 
                 <div class="text-indigo-50 my-2 font-bold text-2xl md:text-5xl font-russo ">
-                    {{debut || "03 Novembre 2022 "}}
+                    {{debut || "02 Février 2023 "}}
                 </div>
             </div>
         </div>
