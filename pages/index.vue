@@ -15,7 +15,7 @@
     <!-- prochaine rentrée -->
     <div>
       <Start
-          :nomSession="session"
+          :nomSession="session "
           :debut="debut"
         />
       </div>
@@ -77,8 +77,8 @@ export default {
       }
     },
   },
-  mounted(){
-  // this.callNuxtApi();
+  async mounted(){
+    await this.callNuxtApi();
   //   Weglot.initialize({
   //     api_key: `${this.$config.WEGLOT}`
   // });
