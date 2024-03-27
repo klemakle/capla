@@ -55,25 +55,7 @@ export default {
         [
             '@nuxtjs/dotenv',
             '@nuxtjs/axios',
-            'nuxt-gmaps',
-            {
-                key: 'AIzaSyDRmCh8-3LoLwg9CrUx4O0JUnTvaPoxEdQ'
-            },
-            '@nuxtjs/firebase',
-            {
-              config: {
-                apiKey: 'AIzaSyDwyHVxdZ_g9CtDLqknN1Q9kwB_xVjocxU',
-                authDomain: 'capla-f7ac7.firebaseapp.com',
-                projectId: 'capla-f7ac7',
-                storageBucket: 'capla-f7ac7.appspot.com',
-                messagingSenderId: '492387119009',
-                appId: '1:492387119009:web:729b299659a956a22b65e0',
-                measurementId: 'G-J4FQRLERLK'
-              },
-              services: {
-                auth: true // Just as example. Can be any other service.
-              }
-            }
+            '@nuxtjs/vercel-builder'
         ]
     ],
 
@@ -90,9 +72,12 @@ export default {
         BaseURL: '/'
     },
 
-    serverMiddleware: [
-        '~/express/index.js',
-    ],
+    // serverMiddleware: [
+    //     '~/express/index.js',
+    // ],
+
+    serverMiddleware:
+        process.env.NODE_ENV === 'production' ? [] : ['~/express/index.js'],
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {

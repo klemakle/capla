@@ -1,9 +1,22 @@
 {
+  "version": 2,
+  "routes": [
+    {
+      "src": "/express/index",
+      "dest": "/express/index.js"
+    }
+  ],
   "builds": [
     {
-      "src": "nuxt.config.js",
+      "src": "express/**/*.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "nuxt.config.ts",
       "use": "@nuxtjs/vercel-builder",
-      "config": {}
+      "config": {
+        "serverFiles": ["api/**"]
+      }
     }
   ]
 }
