@@ -3,7 +3,7 @@ require('dotenv').config()
 export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     ssr: false,
-    // target: 'server',
+    target: 'static',
     head: {
         title: 'Capla',
         htmlAttrs: {
