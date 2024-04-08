@@ -15,8 +15,8 @@
     <!-- prochaine rentrée -->
     <div>
       <Start
-          :nomSession="session "
-          :debut="debut"
+          :nomSession="session || 'Session 1' "
+          :debut="debut || '12 Octobre 2024'"
         />
       </div>
 
