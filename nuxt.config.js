@@ -2,8 +2,8 @@ require('dotenv').config()
 
 export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
-    ssr: true,
-    target: 'server',
+    ssr: false,
+    // target: 'server',
     head: {
         title: 'Capla',
         htmlAttrs: {
@@ -59,12 +59,11 @@ export default {
         ]
     ],
 
-    publicRuntimeConfig: {
-        capla: process.env.PASSWORD,
-        EMAIL: process.env.EMAIL,
-        NODE_ENV: process.env.NODE_ENV,
-        WEGLOT: process.env.WEGLOT
-    },
+    // publicRuntimeConfig: {
+    //     capla: process.env.PASSWORD,
+    //     EMAIL: process.env.EMAIL,
+    //     NODE_ENV: process.env.NODE_ENV,
+    // },
     privateRuntimeConfig: {},
 
     axios: {
@@ -72,9 +71,9 @@ export default {
         BaseURL: '/'
     },
 
-    // serverMiddleware: [
-    //     '~/express/index.js',
-    // ],
+    serverMiddleware: [
+        '~/express/index.js',
+    ],
 
     serverMiddleware:
         process.env.NODE_ENV === 'production' ? [] : ['~/express/index.js'],

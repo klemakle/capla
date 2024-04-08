@@ -6,11 +6,11 @@
                     Prochaine rentrée
                 </div>
                 <div v-if="nomSession" class="text-indigo-50 my-2 font-bold text-2xl md:text-5xl font-russo ">
-                    {{nomSession}}
+                    {{nomSession || "Session 2024"}}
                 </div>
 
                 <div v-if="debut" class="text-indigo-50 my-2 font-bold text-2xl md:text-5xl font-russo ">
-                    {{debut}}
+                    {{debut || "12 Octobre 2024"}}
                 </div>
             </div>
         </div>
