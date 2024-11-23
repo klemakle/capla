@@ -54,12 +54,7 @@
 </template>
 
 <script>
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-// AOS.init({
-//     once: true,
-// }); 
- 
+
 import {photos, breakpoints} from '../../assets/js/about.js';
 import Stats from '../../components/about/stats.vue';
 import Staff from '../../components/about/staff.vue'

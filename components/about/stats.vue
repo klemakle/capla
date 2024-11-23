@@ -86,10 +86,10 @@ export default {
       }
   },
   mounted(){
-    const people=document.querySelector("#people");
     const promo=document.querySelector("#promo");
-    this.animate(promo, 0,12, 3000);
-    this.animate(people, 0, 400, 3000);
+    const people=document.querySelector("#people");
+    this.animate(promo, 0,21, 3000);
+    this.animate(people, 0, 1000, 3000);
   }
 }
 </script>

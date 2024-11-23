@@ -21,10 +21,6 @@ export default {
         ],
         script: [
             { src: 'https://cdn.lordicon.com/xdjxvujz.js' },
-            // {
-            //     type: 'text/javascript',
-            //     src: "https://cdn.weglot.com/weglot.min.js",
-            // },
         ]
     },
 

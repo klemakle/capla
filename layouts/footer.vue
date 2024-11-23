@@ -28,7 +28,7 @@
         <div id="location" class="font-nexa-light flex flex-col w-full text-base lg:text-base lg:w-1/3 my-10 lg:my-0 lg:mb-2">
           <div class="flex justify-start mb-4">
             <div> <span class="material-symbols-outlined">pin_drop</span></div>
-            <div class="ml-2"> 163 10ème Riaom Thiès Thiès, 21000 </div>
+            <div class="ml-2"> Thies cité Malick, derrière hôtel Massa Massa (près du lycée Malick SY) </div>
           </div>
 
           <div class="flex justify-start hover:text-gray-100 mb-4">
@@ -69,7 +69,7 @@
     </div>
 
     <div class="font-nexa-bold bg-gray-800 w-full flex justify-center items-center py-4">
-        <p class="text-gray-400">© Copyright <a href="http://kalidou.me/" class="hover:text-gray-400 text-gray-300" target="blank">@Aethelwulf</a>. Tout droit réservé.</p>
+        <p class="text-gray-400">© Copyright <a href="http://kalidou.info/" class="hover:text-gray-400 text-gray-300" target="blank">@Aethelwulf</a>. Tout droit réservé.</p>
     </div>
   </div>
 </template>

@@ -24,7 +24,15 @@
 .font-nexa-bold {
     font-family: Nexa-Bold;
 }
-
+/* 
+html{
+    max-width: 1536px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto ;
+    background-color: #f9fafb;
+} */
 
 /* .wg-default,
 .wg-default .country-selector {
