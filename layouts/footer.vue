@@ -28,7 +28,7 @@
         <div id="location" class="font-nexa-light flex flex-col w-full text-base lg:text-base lg:w-1/3 my-10 lg:my-0 lg:mb-2">
           <div class="flex justify-start mb-4">
             <div> <span class="material-symbols-outlined">pin_drop</span></div>
-            <div class="ml-2"> Thies cité Malick, derrière hôtel Massa Massa (près du lycée Malick SY) </div>
+            <div class="ml-2"> Thies cité Malick, derrière "Le Massa Massa" (près du lycée Malick SY) </div>
           </div>
 
           <div class="flex justify-start hover:text-gray-100 mb-4">

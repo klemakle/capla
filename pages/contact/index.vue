@@ -2,7 +2,8 @@
   <div>
     <!-- google map capla -->
     <div class="-mx-2">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.6081744441904!2d-16.93805388591338!3d14.791086576347222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1bf22efeb7361%3A0xe9143fb179f01a23!2sCentre%20d%E2%80%99Apprentissage%20Pratique%20de%20la%20Langue%20Anglaise%20(CAPLA)!5e0!3m2!1sfr!2ssn!4v1661100596983!5m2!1sfr!2ssn" width="100%" height="500" style="border:0;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.7467307887923!2d-16.9417687!3d14.783290699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1bfc475920e9f%3A0x329c93eb8cda88e2!2sAuberge%20Restaurant%20Massa%20Massa!5e0!3m2!1sfr!2sfr!4v1732400298989!5m2!1sfr!2sfr" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
     </div>
 
     <div id="contactForm" class="mx-10 border-2 p-4 -mx-2 ">
